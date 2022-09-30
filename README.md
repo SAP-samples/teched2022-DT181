@@ -1,22 +1,29 @@
-# Session ID - Session Title
+# DT181 - Boost Your Productivity in Developing SAP Fiori Apps 
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2022 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2022 session called\
+**DT181 - Boost Your Productivity in Developing SAP Fiori Apps**.  
 
 ## Overview
 
-This session introduces attendees to...
+SAP Fiori tools makes it faster and easier to create SAP Fiori apps. Get hands-on experience on great efficiency features  like the page editor that allows you to add and configure page content, guided answers to fast-track issue resolution - and much more. SAP Fiori tools not only supports SAP Fiori elements, but also offers features to scale SAPUI5 custom app creation and to leverage the flexible programming model, which is available with SAP Fiori elements floorplans for OData V4.
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+There are no special requirements to follow the exercises in this repository.
 
 ## Exercises
 
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
 
-- [Getting Started](exercises/ex0/)
+- [Getting Started - Setting up your Development Environment](exercises/ex0#getting-started---setting-up-your-development-environment)
+  - [Setting up SAP Business Application Studio in an SAP Cloud Platform Trial Account](exercises/ex0#setting-up-business-application-studio-in-an-sap-business-transformation-platform-trial-account)
+    - [New Trial Users](exercises/ex0#new-trial-users)
+    - [Existing Trial Users](exercises/ex0#existing-trial-users)
+    - [Accessing SAP Business Application Studio](exercises/ex0#accessing-sap-business-application-studio)
+  - [Creating the Development Space](exercises/ex0#creating-the-development-space)
+  - [Getting the Sample Scenario](exercises/ex0#getting-the-sample-scenario)
 - [Exercise 1 - First Exercise Description](exercises/ex1/)
     - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
     - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
