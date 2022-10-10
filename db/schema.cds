@@ -11,14 +11,14 @@ namespace sap.fe.cap.travel;
 
 entity Travel : managed {
   key TravelUUID : UUID;
-  TravelID       : Integer @readonly default 0;
+  TravelID       : Integer @readonly default 0 @Common.Text: Description;
   BeginDate      : Date;
   EndDate        : Date;
-  BookingFee     : Decimal(16, 3) @readonly;
+  BookingFee     : Decimal(16, 3);
   TotalPrice     : Decimal(16, 3) @readonly;
   CurrencyCode   : Currency;
   Description    : String(1024);
-  TravelStatus   : Association to TravelStatus  @readonly;
+  TravelStatus   : Association to TravelStatus  @readonly @Common.ValueListWithFixedValues;
   GoGreen        : Boolean default false;
   GreenFee       : Decimal(16, 3) @Core.Computed @readonly;
   TreesPlanted   : Integer @Core.Computed @readonly;  

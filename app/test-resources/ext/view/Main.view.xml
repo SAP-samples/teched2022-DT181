@@ -1,22 +1,22 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" 	xmlns:f="sap.f" xmlns="sap.m" 	xmlns:l="sap.ui.layout" xmlns:macros="sap.fe.macros" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="sap.fe.cap.managetravels.ext.main.Main">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:macros="sap.fe.macros" 	xmlns:f="sap.f"
+    xmlns:html="http://www.w3.org/1999/xhtml" controllerName="sap.fe.cap.managetravels.ext.main.Main">
 	<f:DynamicPage id="FilterBarDefault" class="sapUiResponsiveContentPadding">
 		<f:title>
 			<f:DynamicPageTitle id="_IDGenDynamicPageTitle1">
 				<f:heading>
-				<VBox>
-				<Title id="_IDGenTitle1" text="Travels" level="H2" />		
-				</VBox>
+					<Title id="_IDGenTitle1" text="Travel" level="H2" />
 				</f:heading>
-				<f:expandedContent>
+				<f:snappedContent>
 				<VBox>
-				<Label text="Travels with Highest Total Price"/>
+				<Label text="Open Travels Highest Total Price (Thousands)" class="sapUiTinyMargin"/>
+				<Slider enableTickmarks="true" showAdvancedTooltip="true" change=".handlers.onSliderChanged" value="0" min="0" max="30" width="40%" class="sapUiMediumMarginBottom" />
 				<HeaderContainer scrollStepByItem="2" id="container1" 
 				content="{
 					path:'/Travel', 
 					parameters : {
-						$filter : 'IsActiveEntity eq false or SiblingEntity/IsActiveEntity eq null'
-					},
-					filters: {path: 'TotalPrice', operator: 'GE', value1:25000}
+						$filter : 'TravelStatus_code eq \'O\' and IsActiveEntity eq false or SiblingEntity/IsActiveEntity eq null',
+						$orderby : 'TotalPrice desc'
+					}
 					}">
 					<GenericTile
 						id="myTile"
@@ -31,21 +31,19 @@
 								withMargin="false"
 								value="{TotalPrice}"
 								valueColor="Good"
-								scale="k"
+								scale="k {CurrencyCode_code}"
 							/>
 						</TileContent>
 					</GenericTile>			
 				</HeaderContainer>	
-				</VBox>			
-				</f:expandedContent>				
-				<f:snappedContent>
-					<Text text="{fbConditions>/filtersTextInfo}" />
+				<Text text="{fbConditions>/filtersTextInfo}" class="sapUiTinyMargin" />
+				</VBox>	
 				</f:snappedContent>
 			</f:DynamicPageTitle>
-		</f:title>		
-		<f:header>		
+		</f:title>
+		<f:header>
 			<f:DynamicPageHeader id="_IDGenDynamicPageHeader1" pinnable="true">
-				<VBox id="_IDGenVBox1">								
+				<VBox id="_IDGenVBox1">
 					<macros:FilterBar
 						metaPath="@com.sap.vocabularies.UI.v1.SelectionFields"
 						id="FilterBar"
@@ -54,12 +52,8 @@
 				</VBox>
 			</f:DynamicPageHeader>
 		</f:header>
-		<f:content>	
- 					<macros:Table 
-					id="Table"
-					metaPath="@com.sap.vocabularies.UI.v1.LineItem"
-					filterBar="FilterBar"
-					/>			
+		<f:content>
+		   <macros:Table id="myTable" filterBar="FilterBar" metaPath="@com.sap.vocabularies.UI.v1.LineItem"></macros:Table> 
 		</f:content>
 	</f:DynamicPage>
 </mvc:View>

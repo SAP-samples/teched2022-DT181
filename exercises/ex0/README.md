@@ -51,8 +51,8 @@ Once your development space has status running, click on the development space n
 
 ## Getting the Sample Scenario
 
-Get the GitHub repository clone Url from the repository's [landing page](https://github.com/SAP-samples/teched2022-DT181).\
-Click on button **Code** (1), then click icon (2).
+Get the GitHub repository clone Https Url from the repository's [landing page](https://github.com/SAP-samples/teched2022-DT181).\
+Click on button **Code**, then click the copy icon.
 
 ![copy link](../ex0/images/00_00_0070.png)
 
@@ -85,7 +85,7 @@ Alternatively, you can open a workspace via the file menu.
 
 ![open workspace](../ex0/images/00_00_0065.png)
 
-Select folder **teched2022-DT181** and click **Open**. This will restart SAP Business Application Studio.
+Select folder path **/home/user/projects/teched2022-DT181/** and click **Ok**. This will restart SAP Business Application Studio.
 
 ![select ws folder](../ex0/images/00_00_0066.png)
 

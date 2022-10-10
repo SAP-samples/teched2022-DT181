@@ -12,12 +12,10 @@ annotate cds.UUID with @Core.Computed  @odata.Type : 'Edm.String';
 extend projection TravelService.Travel with {
   // REVISIT: shall be improved by omitting "null as"
   virtual null as acceptEnabled         : Boolean @UI.Hidden,
-  virtual null as rejectEnabled         : Boolean @UI.Hidden,
-  virtual null as deductDiscountEnabled : Boolean @UI.Hidden
+  virtual null as rejectEnabled         : Boolean @UI.Hidden
 }
 
 annotate TravelService.Travel {
-
   BookingFee    @Common.FieldControl  : TravelStatus.fieldControl;
   BeginDate       @Common.FieldControl  : TravelStatus.fieldControl;
   EndDate         @Common.FieldControl  : TravelStatus.fieldControl;
@@ -27,23 +25,31 @@ annotate TravelService.Travel {
   } actions {
   rejectTravel @(
     Core.OperationAvailable : in.rejectEnabled,
-    Common.SideEffects.TargetProperties : [
-      'in/TravelStatus_code',
-      'in/acceptEnabled',
-      'in/rejectEnabled'
-    ],
+    Common : { 
+      SideEffects : {
+        $Type : 'Common.SideEffectsType',
+        TargetProperties : [
+        'in/TravelStatus_code',
+        'in/acceptEnabled',
+        'in/rejectEnabled'
+      ],
+      TargetEntities : ['/TravelService.EntityContainer/Travel']    
+      }
+    }
   );
   acceptTravel @(
     Core.OperationAvailable : in.acceptEnabled,
-    Common.SideEffects.TargetProperties : [
-      'in/TravelStatus_code',
-      'in/acceptEnabled',
-      'in/rejectEnabled'
-    ],
-  );
-  deductDiscount @(
-    Core.OperationAvailable : in.deductDiscountEnabled,
-    Common.SideEffects.TargetProperties : ['in/deductDiscountEnabled'],
+    Common : { 
+      SideEffects : {
+        $Type : 'Common.SideEffectsType',
+        TargetProperties : [
+        'in/TravelStatus_code',
+        'in/acceptEnabled',
+        'in/rejectEnabled'
+      ],
+      TargetEntities : ['/TravelService.EntityContainer/Travel']    
+      }
+    }
   );
 }
 
@@ -77,21 +83,22 @@ annotate TravelService.BookingSupplement {
 
 annotate Currency with @Common.UnitSpecificScale : 'Decimals';
 
-//Exercise 3.2: Add side effect on GoGreen property
 annotate TravelService.Travel with @Common : {SideEffects #GoGreen : {
   $Type            : 'Common.SideEffectsType',
   SourceProperties : [GoGreen],
   TargetProperties : ['TotalPrice', 'GreenFee', 'TreesPlanted'],
   TargetEntities : [to_Booking]
+},
+SideEffects #BookingFee: {
+  SourceProperties: [BookingFee],
+  TargetProperties: ['TotalPrice']
 }};
 
-//Exercise 4.5: Add side effect on ConnectionID
-annotate TravelService.Travel with 
-@Common : {SideEffects #Bookings: {
+annotate TravelService.Travel 
+with @Common : {SideEffects #Bookings: {
   $Type            : 'Common.SideEffectsType',
   SourceEntities : [to_Booking],
-  TargetProperties : ['TotalPrice'],
-  TargetEntities : ['/TravelService.EntityContainer/Travel']
+  TargetProperties : ['TotalPrice']
 }};
 
 

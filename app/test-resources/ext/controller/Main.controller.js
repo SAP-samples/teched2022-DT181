@@ -1,7 +1,11 @@
 sap.ui.define(
-	["sap/fe/core/PageController", "sap/ui/model/json/JSONModel"],
-	function (PageController, JSONModel, Routing) {
-		"use strict";
+    [
+        'sap/fe/core/PageController',
+        'sap/ui/model/json/JSONModel',
+        "sap/ui/model/Filter"
+    ],
+    function(PageController, JSONModel, Filter) {
+        'use strict';
 
         return PageController.extend('sap.fe.cap.managetravels.ext.main.Main', {
             /**
@@ -10,8 +14,8 @@ sap.ui.define(
              * @memberOf sap.fe.cap.managetravels.ext.main.Main
              */
             //  onInit: function () {
-			// 	PageController.prototype.onInit.apply(this);
-			// },
+            //
+            //  },
 
             /**
              * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
@@ -34,16 +38,38 @@ sap.ui.define(
 				});
 				oView.setModel(mFBConditions, "fbConditions");
 			},
-			handlers: {
+
+            /**
+             * Called when the Controller is destroyed. Use this one to free resources and finalize activities.
+             * @memberOf sap.fe.cap.managetravels.ext.main.Main
+             */
+            //  onExit: function() {
+            //
+            //  },
+            handlers: {
 				onFiltersChanged: function (oEvent) {
 					var oSource = oEvent.getSource();
 					var mFBConditions = oSource.getModel("fbConditions");
+					var oFilterChangedParameters = oEvent.getParameters() || {};
+					mFBConditions.setProperty("/inFilterBar", JSON.stringify(oFilterChangedParameters, null, "  "));
+					if (Object.keys(oFilterChangedParameters).length > 0) {
+						mFBConditions.setProperty("/expanded", true);
+					}
+					MessageToast.show("FilterBar filters are changed!");
 					mFBConditions.setProperty("/filtersTextInfo", oSource.getActiveFiltersText());
 				},
                 onPressed: function (oEvent) {
                     var oContext = oEvent.getSource().getBindingContext();
                     this.routing.navigate(oContext);
-                }  
+                },
+                onSliderChanged: function (oEvent) {
+                    this._aStatusFilters = [];
+                    var oBinding = this.getView().byId("container1").getBinding("content"),
+                    sValue = oEvent.getParameter("value") * 1000;
+                    this._aStatusFilters = [new Filter("TotalPrice", "GE", sValue, false)];
+                    oBinding.filter(this._aStatusFilters)
+
+                }              
 			}
         });
     }

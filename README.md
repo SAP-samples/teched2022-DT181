@@ -7,7 +7,7 @@ This repository contains the material for the SAP TechEd 2022 session called\
 
 ## Overview
 
-SAP Fiori tools makes it faster and easier to create SAP Fiori apps. Get hands-on experience on great efficiency features  like the page editor that allows you to add and configure page content, guided answers to fast-track issue resolution - and much more. SAP Fiori tools not only supports SAP Fiori elements, but also offers features to scale SAPUI5 custom app creation and to leverage the flexible programming model, which is available with SAP Fiori elements floorplans for OData V4.
+SAP Fiori tools makes it faster and easier to create SAP Fiori apps. Get hands-on experience on great efficiency features like the page editor that allows you to add and configure page content, guided answers to fast-track issue resolution - and much more. SAP Fiori tools not only supports SAP Fiori elements, but also offers features to scale SAPUI5 custom app creation and to leverage the flexible programming model, which is available with SAP Fiori elements floorplans for OData V4.
 
 ## Requirements
 
@@ -24,9 +24,9 @@ Provide the exercise content here directly in README.md using [markdown](https:/
     - [Accessing SAP Business Application Studio](exercises/ex0#accessing-sap-business-application-studio)
   - [Creating the Development Space](exercises/ex0#creating-the-development-space)
   - [Getting the Sample Scenario](exercises/ex0#getting-the-sample-scenario)
-- [Exercise 1 - First Exercise Description](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
+- [Exercise 1 - Generating an SAP Fiori Elements App](exercises/ex1/)
+    - [Exercise 1.1 - Using the SAP Fiori Tools Application Generator](/exercises/ex1#exercise-11-using-the-sap-fiori-tools-application-generator)
+    - [Exercise 1.2 - Starting the App](/exercises/ex1#exercise-12-starting-the-app)
 - [Exercise 2 - Second Exercise Description](exercises/ex2/)
     - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)

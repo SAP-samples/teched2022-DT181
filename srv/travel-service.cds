@@ -7,7 +7,6 @@ service TravelService @(path:'/processor', requires: 'authenticated-user') {
     action createTravelByTemplate() returns Travel;
     action rejectTravel();
     action acceptTravel();
-    action deductDiscount( percent: Percentage not null ) returns Travel;
   };
 
   // Ensure all masterdata entities are available to clients
