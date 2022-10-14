@@ -83,11 +83,22 @@ In the wizard step **Project Attributes**, add the following attributes to the a
 This will start the app generation.\
 When finished, you can review the generated artifacts in the **Explorer** pane of SAP Business Application Studio.\
 The generated artifacts are located in folder **app/managetravels** (the path reflects the module name you have entered during app generation).\
-In folder **app/managetravels/ext/main** you can find the Main.view.xml and corresponding controller that had been created by the app generator.
 
-![](./images/image30.png)
+(15) Click **Open Page Map** on tab **Application Information** that is automatically displayed after app generation.
 
-The custom page is configured as the default starting page in the application manifest routing section. Please note that a custom view in which you want to use building blocks needs to be wrapped into the Flexible Programming Model component provided by SAP Fiori elements. This ensures that the custom page runs on the SAP Fiori elements framework. The context path is required by SAP Fiori elements as a pointer to the metadata.
+![](./images/image25.png)
+
+(16) On the page map a Custom Page tile is shown. Click icon **Configure Page** ![](./images/image28.png).
+
+![](./images/image27.png)
+
+(17) the corresponding XML view is opened to the side.
+
+![](./images/image29.png)
+
+Both custom page XML View and controller had been created by the app generator. The files are located in folder **app/managetravels/ext/main**.\
+The custom page is configured as the default starting page in the application manifest routing section. Please note that a custom view in which you want to use building blocks needs to be wrapped into the **Flexible Programming Model component** provided by SAP Fiori elements. This ensures that the custom page runs on the SAP Fiori elements framework.
+
 ![](./images/image31.png)
 
 ## Exercise 1.3 Starting the App
@@ -101,23 +112,23 @@ In the following exercises, we will extend the app based on xml views and fragme
 Instead of using **cds watch** in the terminal in order to start the service, we will use the watch script that has been added to file **package.json** by the app generator. The script contains additional parameter **sap-ui-xx-viewCache=false** added to the app start Url.\
 If **cds watch** is already running in a terminal, please end it by pressing keyboard keys **control+c**, otherwise the default port 4004 will already be in use by the existing server process.
 
-\(15\) Click **Preview Application** on tab **Application information** that is automatically displayed after app generation.
+\(18\) Click **Preview Application** on tab **Application Information**.
 
-![](./images/image25.png)
+![](./images/image30.png)
 
 If the tab is closed, you can open it again by selecting the Fiori Tools icon in the side bar and then the application info icon.
 
 ![](./images/applicationinfo.png)
 
 This opens a dropdown at the top offering all **cds run** and **cds watch** based scripts maintained in the scripts section of file **package.json**.\
-(16) Select npm script **watch-managetravels** 
+(19) Select npm script **watch-managetravels** 
 
-![](./images/image27.png)
+![](./images/image32.png)
 
-(17) This runs the service in an Application Modeler terminal session and automatically starts the Fiori application in a new browser session.\
+This runs the service in an Application Modeler terminal session and automatically starts the Fiori application in a new browser session.\
 The empty custom app page is shown.
 
-![](./images/image29.png)
+![](./images/image34.png)
 
 ## Summary
 
