@@ -1,8 +1,7 @@
 # Exercise 1 - Generating an SAP Fiori Elements App
 
-In this exercise, you will create a **SAP Fiori elements** application of type **Flexible Programming Model**, based on the given
-SAP Cloud Application Programming Model sample service.
-For this you will make usage of the **SAP Fiori tools Application Generator**.
+In this exercise, you will create a **Custom App** application leveraging the **Flexible Programming Model** available with SAP Fiori elements floorplans for OData V4. The scenario is based on the given SAP Cloud Application Programming Model sample service.
+To get started,  will make usage of the **SAP Fiori tools Application Generator**.
 
 ## Exercise 1.1 Using the SAP Fiori tools Application Generator
 
@@ -102,10 +101,13 @@ In the following exercises, we will extend the app based on xml views and fragme
 Instead of using **cds watch** in the terminal in order to start the service, we will use the watch script that has been added to file **package.json** by the app generator. The script contains additional parameter **sap-ui-xx-viewCache=false** added to the app start Url.\
 If **cds watch** is already running in a terminal, please end it by pressing keyboard keys **control+c**, otherwise the default port 4004 will already be in use by the existing server process.
 
-\(15\) Click **Preview Application** on tab **Application information** that is automatically displayed after app generation.\
-If the tab is closed, you can open it again via menu command **View->Find Command...->Fiori: Open Application Info**.
+\(15\) Click **Preview Application** on tab **Application information** that is automatically displayed after app generation.
 
 ![](./images/image25.png)
+
+If the tab is closed, you can open it again by selecting the Fiori Tools icon in the side bar and then the application info icon.
+
+![](./images/applicationinfo.png)
 
 This opens a dropdown at the top offering all **cds run** and **cds watch** based scripts maintained in the scripts section of file **package.json**.\
 (16) Select npm script **watch-managetravels** 

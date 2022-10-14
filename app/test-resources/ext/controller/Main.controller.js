@@ -50,12 +50,6 @@ sap.ui.define(
 				onFiltersChanged: function (oEvent) {
 					var oSource = oEvent.getSource();
 					var mFBConditions = oSource.getModel("fbConditions");
-					var oFilterChangedParameters = oEvent.getParameters() || {};
-					mFBConditions.setProperty("/inFilterBar", JSON.stringify(oFilterChangedParameters, null, "  "));
-					if (Object.keys(oFilterChangedParameters).length > 0) {
-						mFBConditions.setProperty("/expanded", true);
-					}
-					MessageToast.show("FilterBar filters are changed!");
 					mFBConditions.setProperty("/filtersTextInfo", oSource.getActiveFiltersText());
 				},
                 onPressed: function (oEvent) {

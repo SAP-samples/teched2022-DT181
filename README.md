@@ -27,9 +27,10 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 - [Exercise 1 - Generating an SAP Fiori Elements App](exercises/ex1/)
     - [Exercise 1.1 - Using the SAP Fiori Tools Application Generator](/exercises/ex1#exercise-11-using-the-sap-fiori-tools-application-generator)
     - [Exercise 1.2 - Starting the App](/exercises/ex1#exercise-12-starting-the-app)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
+- [Exercise 2 - Flexible Programming Model: Using Fiori Elements Building Blocks on a Custom Page](exercises/ex2#exercise-2---flexible-programming-model-using-fiori-elements-building-blocks-on-a-custom-page)
+  - [Exercise 2.1 Guided Development: Add a filter bar building block](exercises/ex2#exercise-21-guided-development-add-a-filter-bar-building-block)
+  - [Exercise 2.2 Add a table building block](exercises/ex2#exercise-22-add-a-table-building-block)
+  - [Summary](exercises/ex2#summary)
 
   
 **OR** Link to the Tutorial Navigator for example...
