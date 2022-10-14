@@ -213,4 +213,4 @@ Switch back to the preview browser tab. It is now showing the filter bar and the
 
 You've now successfully added building blocks filter bar and table to a custom view.
 
-Continue to - [Exercise 3 - Adopt Dynamic Page Layout and add UI5 Freestyle Controls ](../ex3/README.md)
+Continue to - [Exercise 3 - Improve Page Layout and add UI5 Freestyle Controls ](../ex3/README.md)
