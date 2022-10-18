@@ -65,6 +65,8 @@ Switch back to the Business Application Studio and open file **main.view.xml**.\
 
 Please note that the table building block is located in the dynamic page content section.\
 
+## Exercise 3.2 Add Controller Functions for Setting Filter Status
+
 We now need to adopt some controller code from the sample for setting the filter status value and for the filter changed event handler.\
 Switch back to the Flexible Programming Model Explorer. In the code editor, open file **FilterBarDefault.controller.js**.
 

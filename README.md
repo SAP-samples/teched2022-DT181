@@ -28,9 +28,14 @@ Provide the exercise content here directly in README.md using [markdown](https:/
     - [Exercise 1.1 - Using the SAP Fiori Tools Application Generator](/exercises/ex1#exercise-11-using-the-sap-fiori-tools-application-generator)
     - [Exercise 1.2 - Starting the App](/exercises/ex1#exercise-12-starting-the-app)
 - [Exercise 2 - Flexible Programming Model: Using Fiori Elements Building Blocks on a Custom Page](exercises/ex2#exercise-2---flexible-programming-model-using-fiori-elements-building-blocks-on-a-custom-page)
-  - [Exercise 2.1 Guided Development: Add a filter bar building block](exercises/ex2#exercise-21-guided-development-add-a-filter-bar-building-block)
-  - [Exercise 2.2 Add a table building block](exercises/ex2#exercise-22-add-a-table-building-block)
+  - [Exercise 2.1 Guided Development: Adding Building Block Filter Bar](exercises/ex2#exercise-21-guided-development-adding-building-block-filter-bar)
+  - [Exercise 2.2 Adding Building Block Table](exercises/ex2#exercise-22-adding-building-block-table)
+  - [Exercise 2.3 Page Map: Add Object Page and Switch to Flexible Column Layout](exercises/ex2#exercise-23-page-map-add-object-page-and-switch-to-flexible-column-layout)
   - [Summary](exercises/ex2#summary)
+- [Exercise 3 - Improve Page Layout and add UI5 Freestyle Controls](/exercises/ex3#exercise-3---improve-page-layout-and-add-ui5-freestyle-controls)
+  - [Exercise 3.1 - Adopt Dynamic Page Layout to the Main Page](/exercises/ex3#exercise-31---adopt-dynamic-page-layout-to-the-main-page)
+  - [Exercise 3.2 - Add Controller Functions for Setting Filter Status](/exercises/ex3#exercise-32-add-controller-functions-for-setting-filter-status)
+  - [Summary](#summary)
 
   
 **OR** Link to the Tutorial Navigator for example...
