@@ -1,4 +1,4 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:macros="sap.fe.macros" xmlns:f="sap.f" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="sap.fe.cap.managetravels.ext.main.Main">
+<mvc:View xmlns:core="sap.ui.core" xmlns:f="sap.f" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:macros="sap.fe.macros" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="sap.fe.cap.managetravels.ext.main.Main">
     <f:DynamicPage id="FilterBarDefault" class="sapUiResponsiveContentPadding">
         <f:title>
             <f:DynamicPageTitle id="_IDGenDynamicPageTitle1">
@@ -6,26 +6,35 @@
                     <Title id="_IDGenTitle1" text="Travel" level="H2" />
                 </f:heading>
                 <f:snappedContent>
-                    <Panel headerText='{i18n>HighestPrice}'>
-                        <VBox>
-                            <Slider enableTickmarks="true" showAdvancedTooltip="true" change=".handlers.onSliderChanged" value="0" min="0" max="30" width="40%" class="sapUiMediumMarginBottom" />
+                    <Panel id='pn1' headerText='{i18n>HighestPrice}'>
+                        <VBox id='vb1'>
+                            <Slider id='sl1' 
+                                enableTickmarks="true" 
+                                showAdvancedTooltip="true" 
+                                change=".handlers.onSliderChanged" 
+                                value="0" 
+                                min="0" 
+                                max="30" 
+                                width="40%" 
+                                class="sapUiMediumMarginBottom" 
+                            />
                             <HeaderContainer scrollStep="200" id="container1" content="{
-							path:'/Travel', 
-							parameters : {
-								$filter : 'TravelStatus_code eq \'O\' and IsActiveEntity eq false or SiblingEntity/IsActiveEntity eq null',
-								$orderby : 'TotalPrice desc'
-					}
-					}">
-                                <GenericTile header="Travel {TravelID}" subheader="{Description}" press=".handlers.onPressed" class="sapUiTinyMarginEnd sapUiTinyMarginTop tileLayout">
-                                    <TileContent unit="{CurrencyCode_code}" footer="{to_Customer/LastName}">
-                                        <NumericContent withMargin="false" value="{TotalPrice}" valueColor="Good" scale="k" />
+                                path:'/Travel', 
+                                parameters : {
+                                    $filter : 'TravelStatus_code eq \'O\' and IsActiveEntity eq false or SiblingEntity/IsActiveEntity eq null',
+                                    $orderby : 'TotalPrice desc'
+                                }
+					        }">
+                                <GenericTile id='gt1' header="Travel {TravelID}" subheader="{Description}" press=".handlers.onPressed" class="sapUiTinyMarginEnd sapUiTinyMarginTop tileLayout">
+                                    <TileContent id='tc1' unit="{CurrencyCode_code}" footer="{to_Customer/LastName}">
+                                        <NumericContent id='nc1' withMargin="false" value="{TotalPrice}" valueColor="Good" scale="k" />
                                     </TileContent>
                                 </GenericTile>
                             </HeaderContainer>
                         </VBox>
                     </Panel>
-                    <Panel headerText="{i18n>FilterStatus}">
-                        <Text text="{fbConditions>/filtersTextInfo}" class="sapUiTinyMargin" />
+                    <Panel id='pn2' headerText="{i18n>FilterStatus}">
+                        <Text id='filterInfo1' text="{fbConditions>/filtersTextInfo}" class="sapUiTinyMargin" />
                     </Panel>
                 </f:snappedContent>
             </f:DynamicPageTitle>
@@ -38,7 +47,7 @@
             </f:DynamicPageHeader>
         </f:header>
         <f:content>
-            <macros:Table id="myTable" filterBar="FilterBar" metaPath="@com.sap.vocabularies.UI.v1.LineItem" />
+            <macros:Table metaPath="@com.sap.vocabularies.UI.v1.LineItem" readOnly="true" id="LineItemTable" filterBar="FilterBar" />
         </f:content>
     </f:DynamicPage>
 </mvc:View>
