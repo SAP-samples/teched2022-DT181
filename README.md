@@ -34,15 +34,12 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 - [Exercise 3 - Improve Page Layout and add UI5 Freestyle Controls](/exercises/ex3#exercise-3---improve-page-layout-and-add-ui5-freestyle-controls)
   - [Exercise 3.1 - Adopt Dynamic Page Layout to the Main Page](/exercises/ex3#exercise-31---adopt-dynamic-page-layout-to-the-main-page)
   - [Exercise 3.2 - Add Controller Functions for Setting Filter Status](/exercises/ex3#exercise-32-add-controller-functions-for-setting-filter-status)
+  - [Exercise 3.3 - Add Generic Tile Slider](/exercises/ex3#exercise-33---add-generic-tile-slider)
 
   
 **OR** Link to the Tutorial Navigator for example...
 
 Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
-
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
 
 ## How to obtain support
 
