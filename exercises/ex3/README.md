@@ -1,7 +1,6 @@
 # Exercise 3 - Improve Page Layout and add UI5 Freestyle Controls
 
-In this exercise we will improve the page layout and add features like a dynamic page title with snapped header content showing the filter status\
-as it is known from the standard Listreport floorplan.
+In this exercise we will improve the page layout and add features like a dynamic page title with snapped header content showing the filter status as it is known from the standard Listreport floorplan.\
 In order to adopt a custom design proposal, we will then add a tile slider showing open travels with a high total price.
 ## Exercise 3.1 - Adopt Dynamic Page Layout to the Main Page
 
@@ -14,7 +13,7 @@ The sample shows the building block filter bar in a dynamic page layout.\
 
 Take a look at the code pane on the right side.
 
-(3) The filter bar status is defined in the snapped content of the dynamic page title with a declarative binding to property **filterTextInfo**.
+(3) The filter bar status is defined in the snapped content of the dynamic page title with a declarative binding to property **fbConditions>/filterTextInfo**.
 
 (4) The Filter bar building block is defined in the dynamic page header.
 
@@ -70,13 +69,13 @@ We now need to adopt some controller code from the sample for setting the filter
 Switch back to the Flexible Programming Model Explorer. In the code editor, open file **FilterBarDefault.controller.js**.
 
 (7) Function **onAfterRendering** creates a JSONModel with property **filtersTextInfo** (and some others needed for the sample).\
-The value is retrieved by FilterBar API function **getActiveFiltersText().
+The value is retrieved by FilterBar API function **getActiveFiltersText()**.
 
-(8) In event handler function **onFiltersChanged**, **filterTextInfo** is set every time the filter has been changed.
+(8) In event handler function **onFiltersChanged**, property **filterTextInfo** is set every time the filter has been changed.
 
 ![](./images/image8.png)
 
-To leverage that functionality in the app, we adopt the sample code to file app/managetravels/webapp/Main.controller.js.
+To leverage that functionality in the app, we adopt the sample code to file **app/managetravels/webapp/Main.controller.js**.
 
 (9) Switch back to the Application Studio and open file **Main.controller.js**
 
@@ -117,7 +116,7 @@ Switch to the preview browser tab.
 
 ## Exercise 3.3 - Add Generic Tile Slider
 
-The target design of the app sketches an overview on open travels with a high total price in form of a tile slider in the custom page snapped header area. While this could be as well achieved by defining multiple tab views with a selection variant on a standard list report (and it is recommended to always evaluate what can be achieved with the standard means Fiori elements offers), customers might prefer an alternative design approach to meet their requirements, which can be met with the Flexible Programming Model.
+The target design of the app sketches an overview on open travels with a high total price in form of a tile slider in the custom page snapped header area. While this could be as well achieved by defining multiple tab views with a selection variant on a standard list report (and it is recommended to always evaluate what can be achieved with the standard means Fiori elements offers), customers might prefer an alternative design approach to meet their requirements, which can be achieved with the Flexible Programming Model.
 
 (16) Open the [Custom Page Sample](https://ui5.sap.com/test-resources/sap/fe/core/fpmExplorer/index.html#/customElements/customElementsOverview/customPageContent) in the **Flexible Programming Model Explorer**.
 
@@ -129,7 +128,7 @@ The target design of the app sketches an overview on open travels with a high to
 
 ![](./images/image12.png)
 
-(19) Select **CustomPage.controller.js**. The press handler implementation shows how navigation is done by using the extension API by simply passing the binding context.
+(19) Select **CustomPage.controller.js**. The press handler implementation shows how navigation is done by using the Flexible Programming Model routing extension API by simply passing the binding context to function **navigate**.
 
 ![](./images/image14.png)
 

@@ -82,7 +82,7 @@ In the wizard step **Project Attributes**, add the following attributes to the a
 
 This will start the app generation.\
 When finished, you can review the generated artifacts in the **Explorer** pane of SAP Business Application Studio.\
-The generated artifacts are located in folder **app/managetravels** (the path reflects the module name you have entered during app generation).\
+The generated artifacts are located in folder **app/managetravels** (the path reflects the module name you have entered during app generation).
 
 (15) Click **Open Page Map** on tab **Application Information** that is automatically displayed after app generation.
 
@@ -103,7 +103,7 @@ The custom page is configured as the default starting page in the application ma
 
 ## Exercise 1.3 Starting the App
 
-After completing these steps you will have started and tested the generated app.
+After completing these steps you will have started the generated app.
 
 Besides the common way of starting a CAP service via **cds watch**, another convenient way to start the service and app at the same time is to add an npm script with corresponding parametrization to file package.json of the root folder.
 
