@@ -201,8 +201,8 @@ init() {
         numericSeverity: 1
       })
       return UPDATE(Travel.drafts, req.data.TravelUUID).with(`
-    TotalPrice = TotalPrice + round (TotalPrice * 0.01, 3),
-    GreenFee = round (TotalPrice * 0.01, 3),
+    TotalPrice = TotalPrice + round (TotalPrice * 0.01, 0),
+    GreenFee = round (TotalPrice * 0.01, 0),
     TreesPlanted = round(TotalPrice * 0.01, 0)
   `)
     } else {

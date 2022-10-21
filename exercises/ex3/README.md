@@ -230,4 +230,4 @@ Switch to the app preview browser tab.\
 
 You've now successfully adopted dynamic page layout to your main view and added filter status text to the snappe header area.
 
-Continue to - [Exercise 4 - Page Map: Configure the object page layout](../ex4/README.md)
+Continue to - [Exercise 4 - Page Map: Configuring the Object Page Layout](../ex4/README.md)
