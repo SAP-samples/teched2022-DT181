@@ -6,7 +6,7 @@ In this exercise we will configure the object page layout by using the Fiori too
 
 (1) In the Application Studio toolbar, click the SAP Fiori icon ![](./images/image2.png).
 
-(2) Click button **Open Application Info** ![](./images/image3.png).
+(2) Click icon **Open Application Info** ![](./images/image3.png).
 
 (3) Click on tile **Open Page Map**.
 
@@ -18,7 +18,7 @@ In this exercise we will configure the object page layout by using the Fiori too
 
 We start by defining some actions in the object page header.
 
-(5) Click button **Add Actions** ![](./images/image8.png).
+(5) Click **Add Actions** ![](./images/image8.png).
 
 ![](./images/image7.png)
 
@@ -31,7 +31,7 @@ We start by defining some actions in the object page header.
 Define a text to be displayed as a action button label by entering (8) **Accept Travel** and (9) **Reject Travel**. 
 
 
-(10) Click button **Create missing i18n references** ![](./images/image12.png) to create the corresponding text keys.
+(10) Click **Create missing i18n references** ![](./images/image12.png) to create the corresponding text keys.
 
 ![](./images/image11.png)
 
@@ -59,13 +59,13 @@ In this exercise we will add a group section and several form sub sections.
 
 ![](./images/image21.png)
 
-(16) Click button ![](./images/image10.png).
+(16) Click ![](./images/image10.png).
 
 ![](./images/image23.png)
 
 (17) Expand section **Travel** by clicking ![](./images/image25.png).
 
-(18) Click button **Add Sections **![](./images/image26.png) to add a sub section.
+(18) Click **Add Sections **![](./images/image26.png) to add a sub section.
 
 (19) Select ![](./images/image27.png).
 
@@ -83,7 +83,7 @@ In this exercise we will add a group section and several form sub sections.
 
 ![](./images/image32.png)
 
-(23) (24) Expand the sub section hierarchy,  (25) click button ![](./images/image17.png) and (26) select ![](./images/image36.png).
+(23) (24) Expand the sub section hierarchy,  (25) Click ![](./images/image17.png) and (26) select ![](./images/image36.png).
 
 ![](./images/image33.png)
 
@@ -150,7 +150,7 @@ For more information about side effects, please check the guide [Usage of Side E
 
 (38) Select another travel.
 
-(39) Click button ![](./images/image54.png).
+(39) Click ![](./images/image54.png).
 
 ![](./images/image53.png)
 
@@ -166,7 +166,7 @@ defined in file **app/field-control.cds** [line 86 ff.](/app/field-control.cds#8
 
 Let's add a table section by using the Page Map.
 
-(42) Click button **Add Sections**.
+(42) Click **Add Sections**.
 
 (43) Select **Add Table Section**.
 
@@ -181,7 +181,7 @@ Let's add a table section by using the Page Map.
 
 ![](./images/image64.png)
 
-(47) Click button **Add**.
+(47) Click **Add**.
 
 (48) (49) Expand the section hierarchy.
 
@@ -204,7 +204,7 @@ Let's add a table section by using the Page Map.
 
 ![](./images/image72.png)
 
-(53) Click button ![](./images/image10.png).
+(53) Click ![](./images/image10.png).
 
 ![](./images/image73.png)
 
@@ -217,7 +217,7 @@ Please note that in the Page Map you can always navigate to the corresponding an
 ![](./images/navToCode.png)
 
 Switch to the preview browser tab.\
-(56) On the object page, click button **Enter Full Screen** ![](./images/image77.png).
+(56) On the object page, Click **Enter Full Screen** ![](./images/image77.png).
 
 ![](./images/image76.png)
 

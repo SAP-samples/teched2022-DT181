@@ -328,7 +328,7 @@ init() {
     })
 
     /**
-     * Exercise 6: Custom Section Chart Building Block
+     * Exercise 7: Custom Section Chart Building Block
      */
     this.on("READ", "BookedFlights", async (context, next) => {
       var bookedFlights = await next()

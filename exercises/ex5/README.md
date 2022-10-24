@@ -35,7 +35,7 @@ Chart type **#Donut** displays a **radial chart**. Properties **Measures** and *
 
 ![](./images/image14.png)
 
-(10) Click button ![](./images/image17.png).
+(10) Click ![](./images/image17.png).
 
 ![](./images/image16.png)
 
@@ -56,7 +56,7 @@ We now define how the color of the chart should be calculated by defining the cr
 
 ![](./images/image24.png)
 
-(16) On column **BookedFlights** click button **Navigate to source code** ![](./images/image27.png).
+(16) On column **BookedFlights** Click **Navigate to source code** ![](./images/image27.png).
 
 ![](./images/image26.png)
 

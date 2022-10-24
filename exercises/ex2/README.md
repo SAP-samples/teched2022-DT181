@@ -61,7 +61,7 @@ Clicking ![](./images/image18.png) inserts it into the target annotation file.
 
 ![](./images/image19.png)
 
-(14) Click button **Next** to get to step 2 in the development guide.
+(14) Click **Next** to get to step 2 in the development guide.
 
 ![](./images/image20.png)
 
@@ -220,7 +220,7 @@ details on the page, and to expand and collapse the screen areas.
 This defines the context binding of the object page and\
 automatically enables navigation for the custom page table.
 
-(38) Click button ![](./images/image63.png).
+(38) Click ![](./images/image63.png).
 
 ![](./images/image61.png)
 

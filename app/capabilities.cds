@@ -16,7 +16,7 @@ annotate TravelService.Travel with @Capabilities : {
   }
  };
 
-//Add Aggregation Capabilities
+//Exercise 7: Aggregation Capabilities
 annotate TravelService.BookedFlights with @(
   Aggregation.ApplySupported: {
     $Type : 'Aggregation.ApplySupportedType',

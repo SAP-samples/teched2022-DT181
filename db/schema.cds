@@ -90,7 +90,7 @@ extend Airline with {
   VIPCustomerBookings : Integer;
 };
 
-//Exercise 6: Using the Chart Building Block
+//Exercise 7: Using the Chart Building Block
 define view BookedFlights as select from Booking left join Airline on Airline.AirlineID = Booking.to_Carrier.AirlineID  {
   key to_Customer.CustomerID as to_Customer_CustomerID, key AirlineID, to_Customer.LastName as LastName, BookingUUID, Name, VIPCustomerBookings, to_Travel
 };

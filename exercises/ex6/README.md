@@ -41,7 +41,7 @@ In the dialog **Add Custom Section**, enter title **My Itinerary**.\
 
 ![](./images/image13.png)
 
-(8) In the dialog, Click button ![](./images/image16.png).
+(8) In the dialog, Click ![](./images/image16.png).
 
 ![](./images/image15.png)
 
@@ -113,7 +113,7 @@ Switch to the preview browser tab of the app.\
 The object page now shows the custom section with the message strip control and the table building block.\
 We will now check whether it behaves exactly as the original booking table from the object page section that was replaced.
 
-(16) Click button **Edit** ![](./images/image30.png).
+(16) Click **Edit** ![](./images/image30.png).
 
 ![](./images/image29.png)
 
@@ -131,7 +131,7 @@ Let us check whether the edit flow is also working as expected.\
 
 ![](./images/image35.png)
 
-(20) Click button ![](./images/image38.png).
+(20) Click ![](./images/image38.png).
 
 ![](./images/image37.png)
 
