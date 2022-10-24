@@ -162,7 +162,7 @@ defined in file **app/field-control.cds** [line 86 ff.](/app/field-control.cds#8
 
 ![](./images/image55.png)
 
-## Exercise 3.2 - Adding a Table Section
+## Exercise 4.2 - Adding a Table Section
 
 Let's add a table section by using the Page Map.
 
@@ -230,4 +230,4 @@ The table is shown below the group section.
 
 You've now successfully configured the object page layout by adding group section,  sub sections, and a table section by making usage of the Page Map.
 
-Continue to - [Exercise 5 - Guided Development: Add Table Line Criticality and Micro Chart](../exy/README.md)
+Continue to - [Exercise 5 - Add Table Line Criticality and Micro Chart Table Column](../exy/README.md)

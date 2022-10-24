@@ -18,7 +18,7 @@ There are no special requirements to follow the exercises in this repository.
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
 
 - [Getting Started - Setting up your Development Environment](exercises/ex0#getting-started---setting-up-your-development-environment)
-  - [Setting up SAP Business Application Studio in an SAP Cloud Platform Trial Account](exercises/ex0#setting-up-business-application-studio-in-an-sap-business-transformation-platform-trial-account)
+  - [Setting up SAP Business Application Studio in an SAP Business Technology Platform Trial Account](exercises/ex0#setting-up-business-application-studio-in-an-sap-business-technology-platform-trial-account)
     - [New Trial Users](exercises/ex0#new-trial-users)
     - [Existing Trial Users](exercises/ex0#existing-trial-users)
     - [Accessing SAP Business Application Studio](exercises/ex0#accessing-sap-business-application-studio)
@@ -35,6 +35,12 @@ Provide the exercise content here directly in README.md using [markdown](https:/
   - [Exercise 3.1 - Adopt Dynamic Page Layout to the Main Page](/exercises/ex3#exercise-31---adopt-dynamic-page-layout-to-the-main-page)
   - [Exercise 3.2 - Add Controller Functions for Setting Filter Status](/exercises/ex3#exercise-32-add-controller-functions-for-setting-filter-status)
   - [Exercise 3.3 - Add Generic Tile Slider](/exercises/ex3#exercise-33---add-generic-tile-slider)
+- [Exercise 4 - Page Map: Configuring the Object Page Layout](/exercises/ex4#exercise-4---page-map-configuring-the-object-page-layout)
+  - [Exercise 4.1 - Add Actions to Object Page Header](/exercises/ex4#exercise-41---add-actions-to-object-page-header)
+  - [Exercise 3.1 - Adding Group and Form Sections](/exercises/ex4#exercise-31---adding-group-and-form-sections)
+  - [Exercise 4.2 - Adding a Table Section](/exercises/ex4#exercise-42---adding-a-table-section)
+- [Exercise 5 - Page Map: Add Micro Chart Table Column](/exercises/ex5#exercise-5---page-map-add-micro-chart-table-column)
+- [Exercise 6 - Flexible Programming Model: Replace Table Section with a Custom Section]
 
 ## How to obtain support
 
