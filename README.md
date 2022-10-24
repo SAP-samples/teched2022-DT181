@@ -46,9 +46,9 @@ Provide the exercise content here directly in README.md using [markdown](https:/
   - [Exercise 6.3 Replace Generated XML Fragment Content](/exercises/ex6#exercise-63-replace-generated-xml-fragment-content)
   - [Exercise 6.4 Testing the Building Block Table](/exercises/ex6#exercise-64-testing-the-building-block-table)
 - [Exercise 7 - Guided Development: Adding Building Block Chart](/exercises/ex7#exercise-7---guided-development-adding-building-block-chart)
-- [Exercise 7.1 - Use Guided Development to Add Building Block Chart](/exercises/ex7#exercise-71---use-guided-development-to-add-building-block-chart)
-- [Exercise 7.3: Implementing the Chart's Selection Change Handler](/exercises/ex7#exercise-73-implementing-the-charts-selection-change-handler)
-- [Exercise 7.4 Testing the Chart's Event Handler](/exercises/ex7#exercise-74-testing-the-charts-event-handler)
+  - [Exercise 7.1 - Use Guided Development to Add Building Block Chart](/exercises/ex7#exercise-71---use-guided-development-to-add-building-block-chart)
+  - [Exercise 7.3: Implementing the Chart's Selection Change Handler](/exercises/ex7#exercise-73-implementing-the-charts-selection-change-handler)
+  - [Exercise 7.4 Testing the Chart's Event Handler](/exercises/ex7#exercise-74-testing-the-charts-event-handler)
 
 ## How to obtain support
 
