@@ -37,10 +37,18 @@ Provide the exercise content here directly in README.md using [markdown](https:/
   - [Exercise 3.3 - Add Generic Tile Slider](/exercises/ex3#exercise-33---add-generic-tile-slider)
 - [Exercise 4 - Page Map: Configuring the Object Page Layout](/exercises/ex4#exercise-4---page-map-configuring-the-object-page-layout)
   - [Exercise 4.1 - Add Actions to Object Page Header](/exercises/ex4#exercise-41---add-actions-to-object-page-header)
-  - [Exercise 3.1 - Adding Group and Form Sections](/exercises/ex4#exercise-31---adding-group-and-form-sections)
-  - [Exercise 4.2 - Adding a Table Section](/exercises/ex4#exercise-42---adding-a-table-section)
+  - [Exercise 4.2 - Adding Group and Form Sections](/exercises/ex4#exercise-31---adding-group-and-form-sections)
+  - [Exercise 4.3 - Adding a Table Section](/exercises/ex4#exercise-42---adding-a-table-section)
 - [Exercise 5 - Page Map: Add Micro Chart Table Column](/exercises/ex5#exercise-5---page-map-add-micro-chart-table-column)
-- [Exercise 6 - Flexible Programming Model: Replace Table Section with a Custom Section]
+- [Exercise 6 - Flexible Programming Model: Extending the Object Page with a Custom Section and Building Blocks](/exercises/ex6#exercise-6---flexible-programming-model-extending-the-object-page-with-a-custom-section-and-building-blocks)
+  - [Exercise 6.1 Remove existing Section via Page Map](/exercises/ex6#exercise-61-remove-existing-section-via-page-map)
+  - [Exercise 6.2 Adding a Custom Section via Page Map](/exercises/ex6#exercise-62-adding-a-custom-section-via-page-map)
+  - [Exercise 6.3 Replace Generated XML Fragment Content](/exercises/ex6#exercise-63-replace-generated-xml-fragment-content)
+  - [Exercise 6.4 Testing the Building Block Table](/exercises/ex6#exercise-64-testing-the-building-block-table)
+- [Exercise 7 - Guided Development: Adding Building Block Chart](/exercises/ex7#exercise-7---guided-development-adding-building-block-chart)
+- [Exercise 7.1 - Use Guided Development to Add Building Block Chart](/exercises/ex7#exercise-71---use-guided-development-to-add-building-block-chart)
+- [Exercise 7.3: Implementing the Chart's Selection Change Handler](/exercises/ex7#exercise-73-implementing-the-charts-selection-change-handler)
+- [Exercise 7.4 Testing the Chart's Event Handler](/exercises/ex7#exercise-74-testing-the-charts-event-handler)
 
 ## How to obtain support
 
