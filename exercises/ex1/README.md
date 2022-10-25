@@ -1,6 +1,6 @@
 # Exercise 1 - Generating an SAP Fiori Elements App
 
-In this exercise, you will create a **Custom App** application leveraging the **Flexible Programming Model** available with SAP Fiori elements floorplans for OData V4. The scenario is based on the given SAP Cloud Application Programming Model sample service.
+In this exercise, we will create a **Custom App** application leveraging the **Flexible Programming Model** available with SAP Fiori elements floorplans for OData V4. The scenario is based on the given SAP Cloud Application Programming Model sample service.
 To get started,  will make usage of the **SAP Fiori tools Application Generator**.
 
 ## Exercise 1.1 Using the SAP Fiori tools Application Generator
@@ -103,7 +103,7 @@ The custom page is configured as the default starting page in the application ma
 
 ## Exercise 1.3 Starting the App
 
-After completing these steps you will have started the generated app.
+After completing these steps we will have started the generated app.
 
 Besides the common way of starting a CAP service via **cds watch**, another convenient way to start the service and app at the same time is to add an npm script with corresponding parametrization to file package.json of the root folder.
 

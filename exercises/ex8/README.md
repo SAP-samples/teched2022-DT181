@@ -13,19 +13,21 @@ Additionally, we will make usage of the **form element building block** in order
 
 (2) In the Application Studio toolbar, click the SAP Fiori icon ![](./images/image4.png).
 
-(3) Click ![](./images/image5.png). This opens up the SAP Fiori Page Map.
+(3) Click ![](./images/image5.png) to open the SAP Fiori Page Map.
 
-(4) On the object page tile click icon **Show Controller Extensions** ![](./images/image6.png).
+(4) On the **object page** tile click icon **Show Controller Extensions** ![](./images/image6.png).
 
 ![](./images/image3.png)
 
-The Page Map supports the creation of controller extensions for all object pages or specific object page instances. We will create a specific controller extension for our travel object page.
+The Page Map supports the creation of controller extensions overriding all object page controllers globally, or only specific object page instances.\
+We will create a specific controller extension for our travel object page.
 
 (5) Click ![](./images/image8.png).
 
 ![](./images/image7.png)
-
-(6) In the **Add Controller Extension Dialog** provide as **Controller Name** ObjectPageExtension and (7) confirm by clicking ![](./images/image10.png).
+The **Add Controller Extension Dialog** is opened.\
+(6)  Insert **ObjectPageExtension** as **Controller Name** 
+(7) confirm by clicking ![](./images/image10.png).
 
 ![](./images/image9.png)
 
@@ -36,36 +38,38 @@ The Page Map supports the creation of controller extensions for all object pages
 (9) In the controller file, below function **onInit()** add the following code which overrides the **editFlow API** function **onBeforeSave**:
 
 ```js
-					onBeforeSave: function() {
-						//Check on green flights
-                        if (!this.getView().getBindingContext().getProperty('GoGreen')){                        	
-							return new Promise(async function(fnResolve, fnReject) {
-								var mSettings = {
-									id: "myFragment",
-									name: "sap.fe.cap.managetravels.ext.fragment.Trees4Tickets",
-									controller: this.base.getView().getController(),
-									contextPath: "/Travel",
-									initialBindingContext: this.getView().getBindingContext()
-								}
-								var oApproveDialog = await this.base.getExtensionAPI().loadFragment(mSettings);
-								oApproveDialog.setBindingContext(this.getView().getBindingContext());
-								let buttons = oApproveDialog.getButtons();
-								let saveButton = buttons.find(obj => obj.sId === "myFragment--Save");
-								saveButton.attachPress(function() {
-													oApproveDialog.close();
-													oApproveDialog.destroy();										
-													fnResolve();	}.bind(this));
-
-								let cancelButton = buttons.find(obj => obj.sId === "myFragment--Cancel");
-								cancelButton.attachPress(function() {
-													oApproveDialog.close();	
-													oApproveDialog.destroy();									
-													fnReject();	}.bind(this));
-									oApproveDialog.open();
-							}.bind(this));
-                        }						
+,
+editFlow: {
+	onBeforeSave: function() {
+			//Check on green flights
+			if (!this.getView().getBindingContext().getProperty('GoGreen')){                        	
+				return new Promise(async function(fnResolve, fnReject) {
+					var mSettings = {
+						id: "myFragment",
+						name: "sap.fe.cap.managetravels.ext.fragment.Trees4Tickets",
+						controller: this.base.getView().getController(),
+						contextPath: "/Travel",
+						initialBindingContext: this.getView().getBindingContext()
 					}
-				}
+					var oApproveDialog = await this.base.getExtensionAPI().loadFragment(mSettings);
+					oApproveDialog.setBindingContext(this.getView().getBindingContext());
+					let buttons = oApproveDialog.getButtons();
+					let saveButton = buttons.find(obj => obj.sId === "myFragment--Save");
+					saveButton.attachPress(function() {
+										oApproveDialog.close();
+										oApproveDialog.destroy();										
+										fnResolve();	}.bind(this));
+
+					let cancelButton = buttons.find(obj => obj.sId === "myFragment--Cancel");
+					cancelButton.attachPress(function() {
+										oApproveDialog.close();	
+										oApproveDialog.destroy();									
+										fnReject();	}.bind(this));
+						oApproveDialog.open();
+				}.bind(this));
+			}						
+	}
+}
 ```
 
 
@@ -75,7 +79,7 @@ The override function is called when pressing the Save button on the object page
 
 For more examples on overriding the edit flow API, you can check the [Flexible Programming Model Explorer](https://sapui5.hana.ondemand.com/test-resources/sap/fe/core/fpmExplorer/index.html#/controllerExtensions/controllerExtensionsOverview/basicExtensibility).
 
-## Exercise 8.2 Move XML Fragment to App Folder
+## Exercise 7.2 Move XML Fragment to App Folder
 
 The **xml fragment** containing the dialog definition is provided with the project.\
 We need to move it to the corresponding app's sub folder in order to make usage of it:
@@ -102,8 +106,6 @@ Please note how the specific instance of the object page controller is overriden
 the ID is constructed by using the pattern **YourApplicationID::ComponentID**
 
 ![](./images/image19.png)
-
-## Exercise 8.3 Testing the Controller Extension
 
 (18) Switch to the preview browser tab and click ![](./images/image21.png).
 

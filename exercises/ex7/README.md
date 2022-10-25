@@ -1,6 +1,6 @@
 # Exercise 7 - Guided Development: Adding Building Block Chart
 
-In this exercise, you will learn how to use **Guided Development** to add **building block Chart** to the object page custom section.
+In this exercise, we will learn how to use **Guided Development** to add **building block Chart** to the object page custom section.
 You will also learn how to implement the chart's selection event handler in order to show additional information on the UI.
 The chart building block to be added to the custom section will show aggregated **bookings per customer for all airlines**, complementing the **Customer VIP Status**
 scenario.\
@@ -131,7 +131,7 @@ This defines the position in the XML Fragment where the reference to building bl
 ![](./images/image46.png)
 
 (30) **Selection Change Function**: handler.onChartSelectionChanged.\
-You will implement the handler in the next exercise.
+We will implement the handler in the next exercise.
 
 ![](./images/image48.png)
 

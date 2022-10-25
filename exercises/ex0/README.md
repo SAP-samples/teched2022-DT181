@@ -2,7 +2,7 @@
 
 Welcome to the workshop **DT181 - Boost Your Productivity in Developing SAP Fiori Apps**.\
 This workshop will guide you step-by-step through the process of creating a **SAPUI5 custom app** and blending it with the **SAP Fiori Elements Flexible Programming Model** which is available with SAP Fiori elements floorplans for OData V4.\
-Based on a **SAP Cloud Application Programming Model** service equipped with basic annotations, you will learn how to assemble your custom design from SAP Fiori Elements Building Blocks and leverage Controller Extensions with the help of **SAP Fiori tools** and the **SAP Fiori Elements Flexible Programming Model**.
+Based on a **SAP Cloud Application Programming Model** service equipped with basic annotations, we will learn how to assemble your custom design from SAP Fiori Elements Building Blocks and leverage Controller Extensions with the help of **SAP Fiori tools** and the **SAP Fiori Elements Flexible Programming Model**.
 
 ## Setting up Business Application Studio in an SAP SAP Business Technology Platform Trial Account
 
@@ -56,7 +56,7 @@ Click on button **Code**, then click the copy icon.
 
 ![copy link](../ex0/images/00_00_0070.png)
 
-In the dev space, you will see a **Welcome Page**.\
+In the dev space, we will see a **Welcome Page**.\
 Click on tile **Clone from Git**.
 
 ![Click on link "Clone from Git"](../ex0/images/click-clone-from-git.png)
