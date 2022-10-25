@@ -49,6 +49,10 @@ Provide the exercise content here directly in README.md using [markdown](https:/
   - [Exercise 7.1 - Use Guided Development to Add Building Block Chart](/exercises/ex7#exercise-71---use-guided-development-to-add-building-block-chart)
   - [Exercise 7.3: Implementing the Chart's Selection Change Handler](/exercises/ex7#exercise-73-implementing-the-charts-selection-change-handler)
   - [Exercise 7.4 Testing the Chart's Event Handler](/exercises/ex7#exercise-74-testing-the-charts-event-handler)
+- [Exercise 8 - Page Map: Adding a Controller Extension](/exercises/ex8#exercise-8---page-map-adding-a-controller-extension)
+	- [Exercise 8.1 - Using the Page Map to Add a Controller Extension](/exercises/ex8#exercise-81---using-the-page-map-to-add-a-controller-extension)
+	- [Exercise 8.2 Move XML Fragment to App Folder](/exercises/ex8#exercise-82-move-xml-fragment-to-app-folder)
+	- [Exercise 8.3 Testing the Controller Extension](/exercises/ex8#exercise-83-testing-the-controller-extension)
 
 ## How to obtain support
 
