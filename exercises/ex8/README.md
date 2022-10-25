@@ -101,7 +101,8 @@ The most interesting part is the **form element building block** used in (14) an
 
 ![](./images/image18.png)
 
-The controller extension to the object page (16) is defined  in file **app/manifest.json** (17).\
+(16) Open file **app/manifest.json**.\
+(17 ) Scroll to section **extends** where the controller extension is defined.\
 Please note how the specific instance of the object page controller is overriden:\
 the ID is constructed by using the pattern **YourApplicationID::ComponentID**
 
