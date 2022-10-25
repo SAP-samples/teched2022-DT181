@@ -22,7 +22,7 @@ Choose the corresponding list entry.
 
 ![](./images/image3.png)
 
-(4) In the wizard step **Floorplan Selection**, click on the tile **Flexible Programming Model**.
+(4) In the wizard step **Template Selection**, click on the tile **Custom Page**.
 
 ![](./images/image5.png)
 

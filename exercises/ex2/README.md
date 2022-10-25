@@ -269,9 +269,12 @@ another text key for it.
 
 ![](./images/image81.png)
 
+(50) Search for property **Editable Header Content** and set it to **false**.
+
+![](./images/image83a.png)
 
 Switch back to the preview browser tab. It is now showing the filter bar and the table. Use the selection fields and trigger selection with **Go** to test the connection between both building blocks.\
-(50) Click on a table line to navigate to the object page. By using building block table, navigation works solely through the context path without having to apply any additional custom coding.
+(51) Click on a table line to navigate to the object page. By using building block table, navigation works solely through the context path without having to apply any additional custom coding.
 
 
 ![](./images/image83.png)
