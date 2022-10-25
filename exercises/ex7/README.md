@@ -4,12 +4,7 @@ In this exercise, we will learn how to use **Guided Development** to add **build
 You will also learn how to implement the chart's selection event handler in order to show additional information on the UI.
 The chart building block to be added to the custom section will show aggregated **bookings per customer for all airlines**, complementing the **Customer VIP Status**
 scenario.\
-File **db/Schema.cds** (1) contains view **BookedFlights** and an association to it in entity **Travel** (2) which we will use as data source for the chart.\
-
-
-(1) Click **schema.cds **![](./images/image2.png).
-
-(2) view
+File **db/Schema.cds** (1) contains view **BookedFlights** and an association to it in entity **Travel** (2) which we will use as data source for the chart.
 
 ![](./images/image1.png)
 
@@ -18,7 +13,7 @@ In file **app/capabilities.cds** (3) you can find the corresponding **aggregati
 
 ![](./images/image3.png)
 
-Annotation explanation:
+**Annotation explanation**:
 
 - Collection **Transformations** lists all supported transformations for the entity container.
 - Collection **GroupableProperties** contains the properties of the annotated entity that can be used in a **groupby** transformation.
@@ -27,7 +22,7 @@ Annotation explanation:
 
 ## Exercise 7.1 - Use Guided Development to Add Building Block Chart
 
-(5) Click the SAP Fiori Tools button ![](./images/image6.png).
+(5) Click icon SAP Fiori ![](./images/image6.png).
 
 (6) Click icon **Open Application Info** ![](./images/image7.png).
 
@@ -43,25 +38,26 @@ Annotation explanation:
 (10) Click **Start Guide**.
 
 ![](./images/image12.png)
-Selecting the following property values:
 
-(11) **CDS File**: ![](./images/image15.png).
+**Set the following property values**:
+
+(11) **CDS File**: ![](./images/image15.png)
 
 ![](./images/image14.png)
 
-(12) **Service**: ![](./images/image17.png).
+(12) **Service**: ![](./images/image17.png)
 
 ![](./images/image16.png)
 
-(13) **Entity**: ![](./images/image19.png).
+(13) **Entity**: ![](./images/image19.png)
 
 ![](./images/image18.png)
 
-(14) **Chart Qualifier**: My Chart
+(14) **Chart Qualifier**: **My Chart**
 
 ![](./images/image20.png)
 
-(15) **Dimensions Entity Property**: ![](./images/image22.png).
+(15) **Dimensions Entity Property**: ![](./images/image22.png)
 
 ![](./images/image21.png)
 
@@ -69,7 +65,7 @@ Selecting the following property values:
 
 ![](./images/image23.png)
 
-(17) Second **Dimensions Entity Property**: ![](./images/image26.png).
+(17) Second **Dimensions Entity Property**: ![](./images/image26.png)
 
 ![](./images/image25.png)
 
@@ -85,7 +81,7 @@ Selecting the following property values:
 
 ![](./images/image31.png)
 
-(21) The annotation is applied to annotation file **app/managetravels/annotations.cds**.\
+(21) The annotation is applied to annotation file **app/managetravels/annotations.cds**.
 
 ![](./images/image33.png)
 
@@ -93,44 +89,44 @@ The annotation defines the **chart type**, the **measure** and the **dimensions*
 The aggregated property **CountFlights** is defined as the **measure**.\
 Properties **to_Customer_Customer_ID** and **AirlineID** are defined as the **grouping dimensions**.\
 The aggregation result for the current Travel's bookings is enriched with aggregated bookings data for all other airlines.\
-This is done in a custom read handler implementation in file **srv/travel-service.js**, section **Exercise 7: Custom Section Chart Building Block**.
+This is done in a custom handler in file **srv/travel-service.js**, section **Exercise 7: Custom Section Chart Building Block**.
 
 (22) Move to step 2 of the development guide by clicking ![](./images/image36.png).
 
 ![](./images/image35.png)
 
-Define the following property values:
+**Set the following property values**:
 
 (23) **View or Fragment File**: ![](./images/image38.png)
 
 ![](./images/image37.png)
 
-(24) **Building Block ID**: myChart
+(24) **Building Block ID**: **myChart**
 
 ![](./images/image39.png)
 
-(25) **Service**: TravelService.
+(25) **Service**: **TravelService**.
 
 ![](./images/image40.png)
 
-(26) **Entity**: ![](./images/image42.png).
+(26) **Entity**: ![](./images/image42.png)
 
 ![](./images/image41.png)
 
-(27) **Navigation Path**: to_BookedFlights
+(27) **Navigation Path**: **to_BookedFlights**
 
 ![](./images/image43.png)
 
-(28) **Chart Qualifier**: ![](./images/image45.png).
+(28) **Chart Qualifier**: ![](./images/image45.png)
 
 ![](./images/image44.png)
 
-(29) **Aggregation Path**: ![](./images/image47.png).\
+(29) **Aggregation Path**: ![](./images/image47.png)\
 This defines the position in the XML Fragment where the reference to building block Chart is to be added.
 
 ![](./images/image46.png)
 
-(30) **Selection Change Function**: handler.onChartSelectionChanged.\
+(30) **Selection Change Function**: **handler.onChartSelectionChanged**\
 We will implement the handler in the next exercise.
 
 ![](./images/image48.png)

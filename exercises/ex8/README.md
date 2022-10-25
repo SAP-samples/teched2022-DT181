@@ -103,7 +103,7 @@ The most interesting part is the **form element building block** used in (14) an
 
 (16) Open file **app/manifest.json**.\
 (17 ) Scroll to section **extends** where the controller extension is defined.\
-Please note how the specific instance of the object page controller is overriden:\
+Please note how the specific instance of the object page controller is overridden:\
 the ID is constructed by using the pattern **YourApplicationID::ComponentID**
 
 ![](./images/image19.png)
