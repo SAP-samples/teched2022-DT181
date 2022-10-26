@@ -25,6 +25,7 @@ There are no special requirements to follow the exercises in this repository.
 - [Exercise 1 - Generating an SAP Fiori Elements App](exercises/ex1/)
     - [Exercise 1.1 - Using the SAP Fiori Tools Application Generator](/exercises/ex1#exercise-11-using-the-sap-fiori-tools-application-generator)
     - [Exercise 1.2 - Starting the App](/exercises/ex1#exercise-12-starting-the-app)
+    - [Usage of Guided Answers for Trouble Shooting](/exercises/ex1#usage-of-guided-answers-for-trouble-shooting)
 - [Exercise 2 - Flexible Programming Model: Using Fiori Elements Building Blocks on a Custom Page](exercises/ex2#exercise-2---flexible-programming-model-using-fiori-elements-building-blocks-on-a-custom-page)
   - [Exercise 2.1 Guided Development: Adding Filter Bar Building Block](exercises/ex2#exercise-21-guided-development-adding-building-block-filter-bar)
   - [Exercise 2.2 Adding Table Building Block](exercises/ex2#exercise-22-adding-building-block-table)

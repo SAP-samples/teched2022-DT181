@@ -130,6 +130,23 @@ The empty custom app page is shown.
 
 ![](./images/image34.png)
 
+## Usage of Guided Answers for Trouble Shooting
+
+If you are experiencing an issue when previewing your application you can use the **Guided Answers extension** provided by SAP Fiori tools within your\
+IDE to help troubleshooting. The Guided Answers extension by SAP is an **interactive documentation** designed to help by guiding\
+users through tasks via a series of questions. You simply answer the questions presented to you to find the correct solution to your problem.\
+You can access the Guided Answer extension through the IDE command palette using the command ‘SAP: Open Guided Answers’.\
+
+![](./images/ga1.png)
+
+You then can then search for the problem you are experiencing, for example, search for **‘Previewing Application’** or **‘SAP Fiori Tools’**\
+and then select the Guided Answer that best fits your issue. 
+
+![](./images/ga2.png)
+
+Step through the Guide by answering the questions or options presented to you.
+
+![](./images/ga3.png)
 ## Summary
 
 You've now successfully generated a SAP Fiori elements application of type Flexible Programming Model.
