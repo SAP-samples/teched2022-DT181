@@ -1,14 +1,14 @@
 # Exercise 5 - Page Map: Add Micro Chart Table Column
 
-In this exercise we will a table column of type micro chart by using the Fiori tools Page Map.\
+In this exercise we will add a table column of type **micro chart** by using the Page Map.\
 The micro chart shall show the Customer VIP Status per booking, based on all cumulated bookings for the corresponding airline.
 
-The data required for the micro chart are already provided in the service model in file **db/schema.cds** (1) as an extension to the **Booking** entity (2).
+(1)(2) The data to be shown in the micro chart is based on the shown properties in entity **Booking** defined in file **db/schema.cds**.
 
 ![mydevspace - SAP Business Application Studio - Google Chrome](images/image1.png "mydevspace - SAP Business Application Studio - Google Chrome")
 
-The properties are annotated with **@Core.Computed**, which means that the values are calculated in a read handler implementation for entity **Booking**
-in file **srv/travel-service.js** (3), section **Exercise 5: Data for Bookings table micro chart** (4).
+The properties are annotated with **@Core.Computed**. The values are calculated in a read handler implementation for entity **Booking**
+in (3) file [/srv/travel-service.js](/srv/travel-service.js#286) , (4) section **Exercise 5: Data for Bookings table micro chart**.
 
 ![mydevspace - SAP Business Application Studio - Google Chrome](images/image4.png "mydevspace - SAP Business Application Studio - Google Chrome")
 

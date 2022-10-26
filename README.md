@@ -15,8 +15,6 @@ There are no special requirements to follow the exercises in this repository.
 
 ## Exercises
 
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
-
 - [Getting Started - Setting up your Development Environment](exercises/ex0#getting-started---setting-up-your-development-environment)
   - [Setting up SAP Business Application Studio in an SAP Business Technology Platform Trial Account](exercises/ex0#setting-up-business-application-studio-in-an-sap-business-technology-platform-trial-account)
     - [New Trial Users](exercises/ex0#new-trial-users)
@@ -28,13 +26,14 @@ Provide the exercise content here directly in README.md using [markdown](https:/
     - [Exercise 1.1 - Using the SAP Fiori Tools Application Generator](/exercises/ex1#exercise-11-using-the-sap-fiori-tools-application-generator)
     - [Exercise 1.2 - Starting the App](/exercises/ex1#exercise-12-starting-the-app)
 - [Exercise 2 - Flexible Programming Model: Using Fiori Elements Building Blocks on a Custom Page](exercises/ex2#exercise-2---flexible-programming-model-using-fiori-elements-building-blocks-on-a-custom-page)
-  - [Exercise 2.1 Guided Development: Adding Building Block Filter Bar](exercises/ex2#exercise-21-guided-development-adding-building-block-filter-bar)
-  - [Exercise 2.2 Adding Building Block Table](exercises/ex2#exercise-22-adding-building-block-table)
+  - [Exercise 2.1 Guided Development: Adding Filter Bar Building Block](exercises/ex2#exercise-21-guided-development-adding-building-block-filter-bar)
+  - [Exercise 2.2 Adding Table Building Block](exercises/ex2#exercise-22-adding-building-block-table)
   - [Exercise 2.3 Page Map: Add Object Page and Switch to Flexible Column Layout](exercises/ex2#exercise-23-page-map-add-object-page-and-switch-to-flexible-column-layout)
 - [Exercise 3 - Improve Page Layout and add UI5 Freestyle Controls](/exercises/ex3#exercise-3---improve-page-layout-and-add-ui5-freestyle-controls)
   - [Exercise 3.1 - Adopt Dynamic Page Layout to the Main Page](/exercises/ex3#exercise-31---adopt-dynamic-page-layout-to-the-main-page)
   - [Exercise 3.2 - Add Controller Functions for Setting Filter Status](/exercises/ex3#exercise-32-add-controller-functions-for-setting-filter-status)
   - [Exercise 3.3 - Add Generic Tile Slider](/exercises/ex3#exercise-33---add-generic-tile-slider)
+  - [Exercise 3.4 - Adding a Custom Slider Filter](/exercises/ex3#exercise-34---adding-a-custom-slider-filter)
 - [Exercise 4 - Page Map: Configuring the Object Page Layout](/exercises/ex4#exercise-4---page-map-configuring-the-object-page-layout)
   - [Exercise 4.1 - Add Actions to Object Page Header](/exercises/ex4#exercise-41---add-actions-to-object-page-header)
   - [Exercise 4.2 - Adding Group and Form Sections](/exercises/ex4#exercise-31---adding-group-and-form-sections)
@@ -44,7 +43,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
   - [Exercise 6.1 Remove existing Section via Page Map](/exercises/ex6#exercise-61-remove-existing-section-via-page-map)
   - [Exercise 6.2 Adding a Custom Section via Page Map](/exercises/ex6#exercise-62-adding-a-custom-section-via-page-map)
   - [Exercise 6.3 Replace Generated XML Fragment Content](/exercises/ex6#exercise-63-replace-generated-xml-fragment-content)
-  - [Exercise 6.4 Testing the Building Block Table](/exercises/ex6#exercise-64-testing-the-building-block-table)
+  - [Exercise 6.4 Testing the Table Building Block](/exercises/ex6#exercise-64-testing-the-building-block-table)
 - [Exercise 7 - Guided Development: Adding Building Block Chart](/exercises/ex7#exercise-7---guided-development-adding-building-block-chart)
   - [Exercise 7.1 - Use Guided Development to Add Building Block Chart](/exercises/ex7#exercise-71---use-guided-development-to-add-building-block-chart)
   - [Exercise 7.3: Implementing the Chart's Selection Change Handler](/exercises/ex7#exercise-73-implementing-the-charts-selection-change-handler)

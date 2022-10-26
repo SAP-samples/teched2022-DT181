@@ -6,7 +6,7 @@ In order to adopt a custom design proposal, we will then add a tile slider showi
 
 (1) Open the [filter bar sample](https://ui5.sap.com/test-resources/sap/fe/core/fpmExplorer/index.html#/buildingBlocks/filterBar/filterBarDefault) in the Flexible Programming Model Explorer
 
-The sample shows the building block filter bar in a dynamic page layout.\
+The sample shows the filter bar building block in a dynamic page layout.\
 (2) Click the **Collapse Header** icon ![](./images/image3.png) to see the filter status.
 
 ![](./images/image1.png)
@@ -24,7 +24,7 @@ Switch back to the Business Application Studio and open file **main.view.xml**.
 
 (5) Add a declaration to the sap.f library to the header.
 
-(6) Replace the whole \<Page> section with the adopted code snippet:
+(6) Replace the whole **\<Page\>** section with the adopted code snippet:
 
 ```xml
     <f:DynamicPage id="FilterBarDefault" class="sapUiResponsiveContentPadding">
@@ -79,10 +79,17 @@ To leverage that functionality in the app, we adopt the sample code to file **ap
 
 (9) Switch back to the Application Studio and open file **Main.controller.js**
 
-(10) Add ```sap/ui/model/json/JSONModel``` to the sap.ui.define
-section.
+(10) Add 
+```js 
+'sap/ui/model/json/JSONModel'
+``` 
+to the sap.ui.define section (see screenshot above).
 
-(11) Add ```JSONModel``` as import parameter to the page controller function.
+(11) Add 
+```js
+JSONModel
+``` 
+as import parameter to the page controller function (see screenshot above).
 
 (12) Replace function **onAfterRendering** with the following code snippet:
 ```js
@@ -143,7 +150,7 @@ FilterStatus=Table Filter Status
 
 ![](./images/image16.png)
 
-(21) Switch to file **Main.view.xml**. Replace the code in \<f:snappedContent\> with the following:
+(21) Switch to file **Main.view.xml**. Replace the code in **\<f:snappedContent\>** with the following:
 
 ```xml
 <Panel id='pn1' headerText='{i18n>HighestPrice}'>
@@ -188,9 +195,10 @@ onPressed: function (oEvent) {
 
 ![](./images/image20.png)
 
+## Exercise 3.4 - Adding a Custom Slider Filter
 We will add a custom slider filter allowing to narrow down the shown Travel tiles based on a minimum total price.
 
-(24) Open file **Main.view.xml** and the following snippet as shown below.
+(24) Open file **Main.view.xml** and the following snippet into **\<VBox id='vb1'\>** as shown below.
 ```js
 <Slider id='sl1' 
     enableTickmarks="true" 
@@ -206,7 +214,16 @@ We will add a custom slider filter allowing to narrow down the shown Travel tile
 
 ![](./images/image21.png)
 
-(25) Add the **onSliderChanged** handler to file Main.controller.js. You need to additionally define 'sap/ui/model/Filter' and the corresponding import parameter to the page controller function. the function sets an updated filter on property TotalPrice every time the slider is moved.
+(25) Add the **onSliderChanged** handler to file Main.controller.js.\
+You need to additionally define 
+```js
+'sap/ui/model/Filter'
+```
+and the corresponding import parameter
+```js
+Filter
+```
+ to the page controller function. the function sets an updated filter on property TotalPrice every time the slider is moved.
 ```js
 ,
 onSliderChanged: function (oEvent) {

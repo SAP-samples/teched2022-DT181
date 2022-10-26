@@ -1,6 +1,6 @@
 # Exercise 8 - Page Map: Adding a Controller Extension
 
-In this exercise we will learn how to change the **edit flow** of an app by implementing a controller extension for the object page with support of the SAP Fiori Page Map.\
+In this exercise we will learn how to change the **edit flow** of an app by implementing a controller extension for the object page with support of the Page Map.\
 In order to promote the new **green flight offering**, we will intercept the **save action** by overriding function **onBeforeSave** of the\
 **edit flow API**, and execute some custom code in order to check whether Trees-4-Tickets has been selected for the travel.\
 Additionally, we will make usage of the **form element building block** in order to display a form in a save dialog.
@@ -13,7 +13,7 @@ Additionally, we will make usage of the **form element building block** in order
 
 (2) In the Application Studio toolbar, click the SAP Fiori icon ![](./images/image4.png).
 
-(3) Click ![](./images/image5.png) to open the SAP Fiori Page Map.
+(3) Click ![](./images/image5.png) to open the Page Map.
 
 (4) On the **object page** tile click icon **Show Controller Extensions** ![](./images/image6.png).
 

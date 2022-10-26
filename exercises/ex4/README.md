@@ -6,7 +6,7 @@ In this exercise we will configure the object page layout by using the Fiori too
 
 (1) In the Application Studio toolbar, click the SAP Fiori icon ![](./images/image2.png).
 
-(2) Click icon **Open Application Info** ![](./images/image3.png).
+(2) Click icon **Open Application Information** ![](./images/image3.png).
 
 (3) Click on tile **Open Page Map**.
 
@@ -28,10 +28,10 @@ We start by defining some actions in the object page header.
 
 ![](./images/image9.png)
 
-Define a text to be displayed as a action button label by entering (8) **Accept Travel** and (9) **Reject Travel**. 
+Define a text to be displayed as an action button label by entering (8) **Accept Travel** and (9) **Reject Travel**. 
 
 
-(10) Click **Create missing i18n references** ![](./images/image12.png) to create the corresponding text keys.
+(10) Click icon **Create missing i18n references** ![](./images/image12.png)to create the corresponding text keys.
 
 ![](./images/image11.png)
 
@@ -46,16 +46,16 @@ The popover informs about the number of missing text keys that were created.
 
 In this exercise we will add a group section and several form sub sections. 
 
-(12) Clicking button **Add Sections **![](./images/image17.png) and select
-(13) ![](./images/image18.png).
+(12) Click on **Add Sections** ![](./images/image17.png)\
+(13) Select ![](./images/image18.png)
 
 ![](./images/image16.png)
 
-(14) In the **Add Group Section** dialog, enter label **Travel** and create the corresponding text key reference by clicking button ![](./images/image20.png).
+(14) In the **Add Group Section** dialog, enter label **Travel** and create the corresponding text key reference by clicking on ![](./images/image20.png).
 
 ![](./images/image19.png)
 
-(15) Confirm by clicking button ![](./images/image22.png).
+(15) Confirm by clicking ![](./images/image22.png).
 
 ![](./images/image21.png)
 
@@ -65,7 +65,7 @@ In this exercise we will add a group section and several form sub sections.
 
 (17) Expand section **Travel** by clicking ![](./images/image25.png).
 
-(18) Click **Add Sections **![](./images/image26.png) to add a sub section.
+(18) Click **Add Sections** ![](./images/image26.png) to add a sub section.
 
 (19) Select ![](./images/image27.png).
 
@@ -83,25 +83,30 @@ In this exercise we will add a group section and several form sub sections.
 
 ![](./images/image32.png)
 
-(23) (24) Expand the sub section hierarchy,  (25) Click ![](./images/image17.png) and (26) select ![](./images/image36.png).
+(23) (24) Expand the sub section hierarchy.\
+(25) Click ![](./images/image17.png)\
+(26) Select ![](./images/image36.png)
 
 ![](./images/image33.png)
 
-(27) In the **Add Basic Fields** dialog, open the drop-down and select field **TravelID**. you can use the input field for filtering the available properties. Remove the filter quickly by pressing keys Ctrl+A(Mac: Cmd+A) then DEL. The selected properties are kept.
+(27) In the **Add Basic Fields** dialog, open the drop-down and select **TravelID**.\
+You can use the input field for filtering the available properties.\
+You can quickly remove the filter by pressing keys Ctrl+A(Mac: Cmd+A) then DEL.\
+The selected properties are kept.
 
-(28) Click ** **![](./images/image39.png).
+(28) Select ![](./images/image39.png).
 
 ![](./images/image37.png)
 
-(29) Add ![](./images/image41.png).
+(29) Select ![](./images/image41.png).
 
 ![](./images/image40.png)
 
-(30) Add ![](./images/image43.png).
+(30) Select ![](./images/image43.png).
 
 ![](./images/image42.png)
 
-(31) Add ![](./images/image45.png).
+(31) Select ![](./images/image45.png).
 
 (32) To collapse the drop-down, click somewhere in the dialog .
 
@@ -111,13 +116,13 @@ In this exercise we will add a group section and several form sub sections.
 
 ![](./images/image46.png)
 
-(34) (35) Add additonal sub sections of type **Form**:
+(34) (35) Add the following additonal **Form** sub sections:
 
 ![](./images/image47.png)
 
 ![](./images/image49.png)
 
-Add the following properties to the sections:
+Add the following properties to the sub sections:
 
 |     Sub Section             |     Property                
 |-----------------------------|-----------------------------
@@ -136,14 +141,15 @@ Add the following properties to the sections:
 
 
 
-Swich to the preview browser tab.
+Swich to the preview browser tab.\
 (36) Select one travel to open the object page .
 
 ![](./images/image50.png)
 
 The Travel tiles show travels with status open.\
-(37) Clicking action button ![](./images/image52.png) changes the travel status.\
-A side effect defined on the action in file **app/field-control.cds** [line 26 ff.](/app/field-control.cds#26) makes sure that the Travel entity is refreshed when the action is executed. Check that the current selected Travel tile dissappears.\
+(37) Click button ![](./images/image52.png) to change the travel status.\
+A side effect defined on the action in file **app/field-control.cds** [line 26 ff.](/app/field-control.cds#26) makes sure that the Travel entity is refreshed when the action is executed. With the status changed,\
+the tiles are refreshed, and the current selected Travel tile dissappears.\
 For more information about side effects, please check the guide [Usage of Side Effects](https://sapui5.hana.ondemand.com/test-resources/sap/fe/core/fpmExplorer/index.html#/advancedFeatures/guidance/guidanceSideEffects).
 
 ![](./images/image51.png)
@@ -156,7 +162,7 @@ For more information about side effects, please check the guide [Usage of Side E
 
 (40) Select the **Trees-4-Tickets** checkbox.\
 For a sustainability initiative, the travel service provides some fields for a new green flight offering.\
-When the checkbox is selected, an info popover is shown (41), and the service backend calculates the values for properties Green Flight Fee,Trees Planted, and Total Price.\
+When the checkbox is selected, an info popover is shown (41), and the service backend calculates the values for properties **Green Flight Fee**,**Trees Planted**, and **Total Price**.\
 The values shown on the UI are automatically updated by another side effect on property **GoGreen** of entity **Travel**
 defined in file **app/field-control.cds** [line 86 ff.](/app/field-control.cds#86)
 
@@ -164,7 +170,7 @@ defined in file **app/field-control.cds** [line 86 ff.](/app/field-control.cds#8
 
 ## Exercise 4.2 - Adding a Table Section
 
-Let's add a table section by using the Page Map.
+We will now add a table section by using the Page Map.
 
 (42) Click **Add Sections**.
 
@@ -185,7 +191,7 @@ Let's add a table section by using the Page Map.
 
 (48) (49) Expand the section hierarchy.
 
-(50) Clicki button **Add Columns **![](./images/image70.png).
+(50) Click **Add Columns** ![](./images/image70.png).
 
 (51) Select ![](./images/image71.png).
 
@@ -193,14 +199,14 @@ Let's add a table section by using the Page Map.
 
 (52) In dialog **Add Basic Columns**, open the drop-down and select the following properties:
 
-- to_Carrier.AirlinePicUrl
-- BookingID
-- to_Customer_CustomerID
-- to_Carrier_AirlineID
-- ConnectionID
-- FlightDate
-- FlightPrice
-- BookingStatus_code
+- **to_Carrier.AirlinePicUrl**
+- **BookingID**
+- **to_Customer_CustomerID**
+- **to_Carrier_AirlineID**
+- **ConnectionID**
+- **FlightDate**
+- **FlightPrice**
+- **BookingStatus_code**
 
 ![](./images/image72.png)
 
@@ -208,7 +214,7 @@ Let's add a table section by using the Page Map.
 
 ![](./images/image73.png)
 
-If not in the right order, you can rearrange the columns by (54)dragging and (55) dropping the columns.
+(54)(55) If not in the right order, you can rearrange the columns by drag and drop.
 
 ![](./images/image74.png)
 

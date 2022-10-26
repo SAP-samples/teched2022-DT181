@@ -1,6 +1,6 @@
 # Exercise 7 - Guided Development: Adding Building Block Chart
 
-In this exercise, we will learn how to use **Guided Development** to add **building block Chart** to the object page custom section.
+In this exercise, we will learn how to use **Guided Development** to add a **chart building block** to the object page custom section.
 You will also learn how to implement the chart's selection event handler in order to show additional information on the UI.
 The chart building block to be added to the custom section will show aggregated **bookings per customer for all airlines**, complementing the **Customer VIP Status**
 scenario.\
@@ -22,9 +22,9 @@ In file **app/capabilities.cds** (3) you can find the corresponding **aggregati
 
 ## Exercise 7.1 - Use Guided Development to Add Building Block Chart
 
-(5) Click icon SAP Fiori ![](./images/image6.png).
+(5) Click on ![](./images/image6.png).
 
-(6) Click icon **Open Application Info** ![](./images/image7.png).
+(6) Click on **Open Application Information** ![](./images/image7.png).
 
 ![](./images/image5.png)
 
