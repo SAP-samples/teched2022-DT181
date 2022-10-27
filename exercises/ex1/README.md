@@ -136,8 +136,6 @@ The empty custom app page is shown.
 Make sure you enable pop-ups
 for SAP Business Application Studio, then restart with **Preview Application** as described above.
 
-![](images/popupblocked.png)
-
 ## Usage of Guided Answers Extension by SAP for Trouble Shooting
 
 If you are experiencing an issue when previewing your application you can use the **Guided Answers extension by SAP** within your
@@ -155,6 +153,13 @@ and then select the Guided Answer that best fits your issue.
 Step through the Guide by answering the questions or options presented to you.
 
 ![](./images/ga3.png)
+
+![](./images/ga4.png)
+
+When using Application Studio in Chrome for the first time, one common reason for that the preview doesn't get opened in a new tab is that the pop-ub blocker of your browser prevented that.\
+Please check under **Reason 3** below how to get this resolved.
+
+![](./images/ga5.png)
 ## Summary
 
 You've now successfully generated a SAP Fiori elements application of type Flexible Programming Model.
