@@ -100,7 +100,7 @@ Please note property **metaPath** referring to the **SelectionFields** annotatio
 
 ![](./images/image36.png)
 
-(23) Now let's start the App Preview. Click ![](./images/image38.png) in the left toolbar of the Business Application Studio.
+(23) If not already started, let's start the App Preview. Click ![](./images/image38.png) in the left toolbar of the Business Application Studio.
 
 (24) Click icon **Preview Application** ![](./images/image39.png).
 

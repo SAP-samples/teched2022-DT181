@@ -4,7 +4,6 @@ service TravelService @(path:'/processor', requires: 'authenticated-user') {
 
 @odata.draft.enabled
   entity Travel as projection on my.Travel actions {
-    action createTravelByTemplate() returns Travel;
     action rejectTravel();
     action acceptTravel();
   };

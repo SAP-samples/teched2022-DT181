@@ -73,8 +73,10 @@ In the wizard step **Project Attributes**, add the following attributes to the a
 - **Application Namespace**: sap.fe.cap\
 (namespace has to match exactly for some of the subsequent exercises to work properly)
 
-- **Minimum SAPUI5 version**: Choose version 1.107.0\
+- **Minimum SAPUI5 version**: Choose version 1.107.1\
  (This is the minimum SAPUI5 version for some of the subsequent exercises to work properly)
+
+- Select **Configure Advanced Options** then **Add javasript code assist libraries to your project**
 
 (14) Click ![](./images/image24.png).
 
@@ -130,12 +132,18 @@ The empty custom app page is shown.
 
 ![](./images/image34.png)
 
-## Usage of Guided Answers for Trouble Shooting
+- If the preview doesn't get opened in a new tab, check if the pop-ub blocker of your browser prevented that.\
+Make sure you enable pop-ups
+for SAP Business Application Studio, then restart with **Preview Application** as described above.
 
-If you are experiencing an issue when previewing your application you can use the **Guided Answers extension** provided by SAP Fiori tools within your\
-IDE to help troubleshooting. The Guided Answers extension by SAP is an **interactive documentation** designed to help by guiding\
-users through tasks via a series of questions. You simply answer the questions presented to you to find the correct solution to your problem.\
-You can access the Guided Answer extension through the IDE command palette using the command ‘SAP: Open Guided Answers’.\
+![](images/popupblocked.png)
+
+## Usage of Guided Answers Extension by SAP for Trouble Shooting
+
+If you are experiencing an issue when previewing your application you can use the **Guided Answers extension by SAP** within your
+IDE to help troubleshooting. The Guided Answers Extension by SAP is **interactive documentation** designed to help users by guiding them through tasks\
+via a series of questions. You simply answer the questions presented to you to find the correct solution to your problem.\
+You can access the Guided Answer extension by SAP through the IDE command palette using the command ‘SAP: Open Guided Answers’.
 
 ![](./images/ga1.png)
 
