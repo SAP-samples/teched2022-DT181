@@ -116,7 +116,7 @@ The selected properties are kept.
 
 ![](./images/image46.png)
 
-(34) (35) Add the following additonal **Form** sub sections:
+(34) (35) Repeat the steps to add  additonal **Form** sub sections **Prices**, **Dates** and **Sustainability**:
 
 ![](./images/image47.png)
 
@@ -236,4 +236,4 @@ The table is shown below the group section.
 
 You've now successfully configured the object page layout by adding group section,  sub sections, and a table section by making usage of the Page Map.
 
-Continue to - [Exercise 5 - Add Table Line Criticality and Micro Chart Table Column](../exy/README.md)
+Continue to - [Exercise 5 - Add Table Line Criticality and Micro Chart Table Column](../ex5/README.md)

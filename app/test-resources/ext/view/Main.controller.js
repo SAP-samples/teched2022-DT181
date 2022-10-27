@@ -1,10 +1,9 @@
 sap.ui.define(
     [
         'sap/fe/core/PageController',
-        'sap/ui/model/json/JSONModel',
-        "sap/ui/model/Filter"
+        'sap/ui/model/json/JSONModel'
     ],
-    function(PageController, JSONModel, Filter) {
+    function(PageController, JSONModel) {
         'use strict';
 
         return PageController.extend('sap.fe.cap.managetravels.ext.main.Main', {
@@ -55,14 +54,6 @@ sap.ui.define(
                 onPressed: function (oEvent) {
                     var oContext = oEvent.getSource().getBindingContext();
                     this.routing.navigate(oContext);
-                },
-                onSliderChanged: function (oEvent) {
-                    this._aStatusFilters = [];
-                    var oBinding = this.getView().byId("container1").getBinding("content"),
-                    sValue = oEvent.getParameter("value") * 1000;
-                    this._aStatusFilters = [new Filter("TotalPrice", "GE", sValue, false)];
-                    oBinding.filter(this._aStatusFilters)
-
                 }              
 			}
         });

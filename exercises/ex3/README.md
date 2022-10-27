@@ -155,14 +155,14 @@ FilterStatus=Table Filter Status
 ```xml
 <Panel id='pn1' headerText='{i18n>HighestPrice}'>
     <VBox id='vb1'>
-        <HeaderContainer scrollStep="200" id="container1" content="{
+        <HeaderContainer scrollStep="200" showDividers="false" id="container1" content="{
             path:'/Travel', 
             parameters : {
                 $filter : 'TravelStatus_code eq \'O\' and IsActiveEntity eq false or SiblingEntity/IsActiveEntity eq null',
                 $orderby : 'TotalPrice desc'
             }
         }">
-            <GenericTile id='gt1' header="Travel {TravelID}" subheader="{Description}" press=".handlers.onPressed" class="sapUiTinyMarginEnd sapUiTinyMarginTop tileLayout">
+            <GenericTile id='gt1' header="Travel {TravelID}" subheader="{Description}" press=".handlers.onPressed" class="sapUiTinyMarginTop tileLayout">
                 <TileContent id='tc1' unit="{CurrencyCode_code}" footer="{to_Customer/LastName}">
                     <NumericContent id='nc1' withMargin="false" value="{TotalPrice}" valueColor="Good" scale="k" />
                 </TileContent>
@@ -195,56 +195,8 @@ onPressed: function (oEvent) {
 
 ![](./images/image20.png)
 
-## Exercise 3.4 - Adding a Custom Slider Filter
-We will add a custom slider filter allowing to narrow down the shown Travel tiles based on a minimum total price.
-
-(24) Open file **Main.view.xml** and the following snippet into **\<VBox id='vb1'\>** as shown below.
-```js
-<Slider id='sl1' 
-    enableTickmarks="true" 
-    showAdvancedTooltip="true" 
-    change=".handlers.onSliderChanged" 
-    value="0" 
-    min="0" 
-    max="30" 
-    width="40%" 
-    class="sapUiMediumMarginBottom" 
-/>
-```
-
-![](./images/image21.png)
-
-(25) Add the **onSliderChanged** handler to file Main.controller.js.\
-You need to additionally define 
-```js
-'sap/ui/model/Filter'
-```
-and the corresponding import parameter
-```js
-Filter
-```
- to the page controller function. the function sets an updated filter on property TotalPrice every time the slider is moved.
-```js
-,
-onSliderChanged: function (oEvent) {
-    this._aStatusFilters = [];
-    var oBinding = this.getView().byId("container1").getBinding("content"),
-    sValue = oEvent.getParameter("value") * 1000;
-    this._aStatusFilters = [new Filter("TotalPrice", "GE", sValue, false)];
-    oBinding.filter(this._aStatusFilters)
-
-}  
-```
-
-![](./images/image22.png)
-
-Switch to the app preview browser tab.\
-(26) With the header collapsed, click and move icon ![](./images/image24.png) on the slider. When releasing it, the tiles are updated.
-
-![](./images/image23.png)
-
 ## Summary
 
-You've now successfully adopted dynamic page layout to your main view and added filter status text to the snappe header area.
+You've now successfully adopted dynamic page layout to your main view and added filter status text and a tile slider to the snapped header area.
 
 Continue to - [Exercise 4 - Page Map: Configuring the Object Page Layout](../ex4/README.md)

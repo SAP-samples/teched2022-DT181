@@ -8,24 +8,14 @@
                 <f:snappedContent>
                     <Panel id='pn1' headerText='{i18n>HighestPrice}'>
                         <VBox id='vb1'>
-                            <Slider id='sl1' 
-                                enableTickmarks="true" 
-                                showAdvancedTooltip="true" 
-                                change=".handlers.onSliderChanged" 
-                                value="0" 
-                                min="0" 
-                                max="30" 
-                                width="40%" 
-                                class="sapUiMediumMarginBottom" 
-                            />
-                            <HeaderContainer scrollStep="200" id="container1" content="{
+                            <HeaderContainer scrollStep="200" showDividers="false" id="container1" content="{
                                 path:'/Travel', 
                                 parameters : {
                                     $filter : 'TravelStatus_code eq \'O\' and IsActiveEntity eq false or SiblingEntity/IsActiveEntity eq null',
                                     $orderby : 'TotalPrice desc'
                                 }
 					        }">
-                                <GenericTile id='gt1' header="Travel {TravelID}" subheader="{Description}" press=".handlers.onPressed" class="sapUiTinyMarginEnd sapUiTinyMarginTop tileLayout">
+                                <GenericTile id='gt1' header="Travel {TravelID}" subheader="{Description}" press=".handlers.onPressed" class="sapUiTinyMarginTop tileLayout">
                                     <TileContent id='tc1' unit="{CurrencyCode_code}" footer="{to_Customer/LastName}">
                                         <NumericContent id='nc1' withMargin="false" value="{TotalPrice}" valueColor="Good" scale="k" />
                                     </TileContent>
