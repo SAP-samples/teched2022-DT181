@@ -14,7 +14,7 @@
 				class='sapUiSmallMarginBottom'>
 		</MessageStrip>     
 		<l:Grid hSpacing='1' containerQuery='true'
-				defaultSpan='L6 M12 S12'>
+				defaultSpan='L6 M6 S12'>
 			<l:dependents>
 				<core:Fragment fragmentName="sap.fe.cap.managetravels.ext.fragment.Popover" type="XML"/>			
 			</l:dependents>				
