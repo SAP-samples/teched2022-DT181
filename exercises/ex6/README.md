@@ -47,7 +47,7 @@ In the dialog **Add Custom Section**, enter **My Itinerary** as title.\
 
 ![](./images/image17.png)
 
-(10)Open the drop-down **Target Facet/Section**.
+(10) Open the drop-down **Anchor Section**.
 
 (11) Select ![](./images/image21.png).
 
