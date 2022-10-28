@@ -38,7 +38,6 @@ There are no special requirements to follow the exercises in this repository.
   - [Exercise 3.1 - Adopt Dynamic Page Layout to the Main Page](/exercises/ex3#exercise-31---adopt-dynamic-page-layout-to-the-main-page)
   - [Exercise 3.2 - Add Controller Functions for Setting Filter Status](/exercises/ex3#exercise-32-add-controller-functions-for-setting-filter-status)
   - [Exercise 3.3 - Add Generic Tile Slider](/exercises/ex3#exercise-33---add-generic-tile-slider)
-  - [Exercise 3.4 - Adding a Custom Slider Filter](/exercises/ex3#exercise-34---adding-a-custom-slider-filter)
 - [Exercise 4 - Page Map: Configuring the Object Page Layout](/exercises/ex4#exercise-4---page-map-configuring-the-object-page-layout)
   - [Exercise 4.1 - Add Actions to Object Page Header](/exercises/ex4#exercise-41---add-actions-to-object-page-header)
   - [Exercise 4.2 - Adding Group and Form Sections](/exercises/ex4#exercise-31---adding-group-and-form-sections)
