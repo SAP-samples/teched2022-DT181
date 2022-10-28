@@ -1,9 +1,4 @@
 # Getting Started - Setting up your Development Environment
-
-Welcome to the workshop **DT181 - Boost Your Productivity in Developing SAP Fiori Apps**.\
-This workshop will guide you step-by-step through the process of creating a **SAPUI5 custom app** and blending it with the **SAP Fiori Elements Flexible Programming Model** which is available with SAP Fiori elements floorplans for OData V4.\
-Based on a **SAP Cloud Application Programming Model** service equipped with basic annotations, we will learn how to assemble your custom design from SAP Fiori Elements Building Blocks and leverage Controller Extensions with the help of **SAP Fiori tools** and the **SAP Fiori Elements Flexible Programming Model**.
-
 ## Setting up Business Application Studio in an SAP SAP Business Technology Platform Trial Account
 
 If you don't have an **SAP BTP account** already, you can create your own [here](https://www.sap.com/products/cloud-platform/get-started.html).

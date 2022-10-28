@@ -7,7 +7,11 @@ This repository contains the material for the SAP TechEd 2022 session called\
 
 ## Overview
 
-SAP Fiori tools makes it faster and easier to create SAP Fiori apps. Get hands-on experience on great efficiency features like the page editor that allows you to add and configure page content, guided answers to fast-track issue resolution - and much more. SAP Fiori tools not only supports SAP Fiori elements, but also offers features to scale SAPUI5 custom app creation and to leverage the flexible programming model, which is available with SAP Fiori elements floorplans for OData V4.
+Welcome to the workshop **DT181 - Boost Your Productivity in Developing SAP Fiori Apps**.\
+This workshop will guide you step-by-step through the process of creating a **SAPUI5 custom app** and blending it with the **SAP Fiori Elements Flexible Programming Model** which is available with SAP Fiori elements floorplans for OData V4.\
+Based on a **SAP Cloud Application Programming Model** service equipped with basic annotations, you will learn how to assemble your custom design from SAP Fiori Elements Building Blocks and leverage Controller Extensions with the help of **SAP Fiori tools** and the **SAP Fiori Elements Flexible Programming Model**.
+
+![Trial Setup](exercises/ex0/images/sketch.png)
 
 ## Requirements
 
