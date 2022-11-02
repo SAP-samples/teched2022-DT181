@@ -20,10 +20,8 @@ There are no special requirements to follow the exercises in this repository.
 ## Exercises
 
 - [Getting Started - Setting up your Development Environment](exercises/ex0#getting-started---setting-up-your-development-environment)
-  - [Setting up SAP Business Application Studio in an SAP Business Technology Platform Trial Account](exercises/ex0#setting-up-business-application-studio-in-an-sap-business-technology-platform-trial-account)
-    - [New Trial Users](exercises/ex0#new-trial-users)
-    - [Existing Trial Users](exercises/ex0#existing-trial-users)
-    - [Accessing SAP Business Application Studio](exercises/ex0#accessing-sap-business-application-studio)
+  - [Setting Up SAP Business Application Studio](exercises/ex0#setting-up-sap-business-application-studio)
+  - [Accessing SAP Business Application Studio](exercises/ex0#accessing-sap-business-application-studio)
   - [Creating the Development Space](exercises/ex0#creating-the-development-space)
   - [Getting the Sample Scenario](exercises/ex0#getting-the-sample-scenario)
 - [Exercise 1 - Generating an SAP Fiori Elements App](exercises/ex1/)

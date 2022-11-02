@@ -1,28 +1,15 @@
 # Getting Started - Setting up your Development Environment
-## Setting up Business Application Studio in an SAP SAP Business Technology Platform Trial Account
 
-If you don't have an **SAP BTP account** already, you can create your own [here](https://www.sap.com/products/cloud-platform/get-started.html).
-
-### New Trial Users
-
-After having registered your new user, start your trial via [this link](https://account.hanatrial.ondemand.com/register)\
-At first time log in, you'll be asked to select your preferred region.
-This will start the set-up of your account.
-
-![Trial Setup](../ex0/images/00_00_0010.png)
-
-Your subaccount, org and space is created automatically, along with the necessary role configurations and subscriptions.\
-When done, the subaccount overview page is shown.
-
-### Existing Trial Users
+If you don't have an **SAP BTP trial account** already, see this [tutorial](https://developers.sap.com/tutorials/hcp-create-trial-account.html).\
+After activation, or if you already had an SAP account, go to the SAP [BTP Trial page](https://account.hanatrial.ondemand.com/) and click Log On.
+## Setting Up SAP Business Application Studio
 
 Depending on when you created the SAP BTP Trial account, the subscription to **SAP Business Application Studio** might already be added in the subaccount.\
-If you are not subscribed to SAP Business Application Studio, follow [this step](https://developers.sap.com/tutorials/appstudio-onboarding.html#005500bf-bf4a-44cb-bbef-f2221d061b5c) to add the subscription to a subaccount.
+If you are not subscribed to SAP Business Application Studio, follow [this step](https://developers.sap.com/tutorials/appstudio-onboarding.html#005500bf-bf4a-44cb-bbef-f2221d061b5c) to add the subscription to your subaccount.
 
+## Accessing SAP Business Application Studio
 
-### Accessing SAP Business Application Studio
-
-Click on the Quick Tool Access icon **SAP Business Application Studio**.
+On the **Welcome** screen, Click on the Quick Tool Access icon **SAP Business Application Studio**.
 
 ![Welcome SAP BTP Trial](../ex0/images/00_00_0020.png)
 
