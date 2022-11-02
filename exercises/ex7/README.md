@@ -53,7 +53,7 @@ In file **app/capabilities.cds** (3) you can find the corresponding **aggregati
 
 ![](./images/image18.png)
 
-(14) **Chart Qualifier**: **My Chart**
+(14) **Chart Qualifier**: **BookedFlights**
 
 ![](./images/image20.png)
 
