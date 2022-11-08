@@ -79,7 +79,7 @@ The override function is called when pressing the Save button on the object page
 
 For more examples on overriding the edit flow API, you can check the [Flexible Programming Model Explorer](https://sapui5.hana.ondemand.com/test-resources/sap/fe/core/fpmExplorer/index.html#/controllerExtensions/controllerExtensionsOverview/basicExtensibility).
 
-## Exercise 7.2 Move XML Fragment to App Folder
+## Exercise 8.2 Move XML Fragment to App Folder
 
 The **xml fragment** containing the dialog definition is provided with the project.\
 We need to move it to the corresponding app's sub folder in order to make usage of it:

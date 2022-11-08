@@ -71,7 +71,7 @@ Select folder path **/home/user/projects/teched2022-DT181/** and click **Ok**. T
 
 ![select ws folder](../ex0/images/00_00_0066.png)
 
-In the **Explorer** pane on the left side of SAP Business Application Studio, you can see the workspace content.
+In the **Explorer** pane on the left side of SAP Business Application Studio, you should see the workspace content.
 
 ![select ws folder](../ex0/images/wsopen.png)
 

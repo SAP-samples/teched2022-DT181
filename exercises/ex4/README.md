@@ -42,7 +42,7 @@ Define a text to be displayed as an action button label by entering (8) **Accept
 The popover informs about the number of missing text keys that were created.
 
 ![](./images/image15.png)
-## Exercise 3.1 - Adding Group and Form Sections
+## Exercise 4.2 - Adding Group and Form Sections
 
 In this exercise we will add a group section and several form sub sections. 
 
@@ -168,7 +168,7 @@ defined in file **app/field-control.cds** [line 86 ff.](/app/field-control.cds#8
 
 ![](./images/image55.png)
 
-## Exercise 4.2 - Adding a Table Section
+## Exercise 4.3 - Adding a Table Section
 
 We will now add a table section by using the Page Map.
 

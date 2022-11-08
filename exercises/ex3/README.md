@@ -22,7 +22,10 @@ Take a look at the code pane on the right side.
 We apply the adopted code snippet to our main view.
 Switch back to the Business Application Studio and open file **main.view.xml**.
 
-(5) Add a declaration to the sap.f library to the header.
+(5) Add a declaration to the **sap.f** library to the header:
+```xml
+xmlns:f="sap.f"
+```
 
 (6) Replace the whole **\<Page\>** section with the adopted code snippet:
 
@@ -124,6 +127,8 @@ Switch to the preview browser tab.
 ## Exercise 3.3 - Add Generic Tile Slider
 
 The target design of the app sketches an overview on open travels with a high total price in form of a tile slider in the custom page snapped header area. While this could be as well achieved by defining multiple tab views with a selection variant on a standard list report (and it is recommended to always evaluate what can be achieved with the standard means Fiori elements offers), customers might prefer an alternative design approach to meet their requirements, which can be achieved with the Flexible Programming Model.
+
+![](./images/sketchdetail.png)
 
 (16) Open the [Custom Page Sample](https://ui5.sap.com/test-resources/sap/fe/core/fpmExplorer/index.html#/customElements/customElementsOverview/customPageContent) in the **Flexible Programming Model Explorer**.
 
