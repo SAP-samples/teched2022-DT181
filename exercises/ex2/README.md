@@ -183,20 +183,11 @@ The code snippets can be manipulated, resulting in an instant reload of the samp
 
 ![](./images/image46.png)
 
-(31) In the application studio, open file ![](./images/image50.png). Per default, this opens the page layout editor.\
-For our scenario, we require the classic XML text editor.
+(31) In the application studio, open file ![](./images/image50.png).
 
 ![](./images/image49.png)
 
-(32) To switch to the XML text editor, click file **Main.view.xml** with the right mouse button and select ![](./images/image52.png).
-
-![](./images/image51.png)
-
-(33) In the drop-down that opens on top, select ![](./images/image54.png).
-
-![](./images/image53.png)
-
-(34) Insert an empty line below **macros:FilterBar** and insert the copied **macros:Table** line.
+(34) Insert an empty line below **macros:FilterBar** and insert the copied **macros:Table** line.
 
 ```js
 <macros:Table metaPath="@com.sap.vocabularies.UI.v1.LineItem" readOnly="true" id="LineItemTable" filterBar="FilterBar" />
@@ -228,7 +219,8 @@ automatically enables navigation for the custom page table.
 
 ![](./images/image64.png)
 
-(40) For **Select Layout for 2 Columns**, select **Mid-Expanded**
+(40) For **Select Layout for 2 Columns**, select **Mid-Expanded**.\
+Below of it, set the **Flex Enabled** drop down to false as we don't require key user adaptation capabilities for the scenario.
 
 ![](./images/image66.png)
 

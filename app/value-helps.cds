@@ -6,6 +6,24 @@ using { sap.fe.cap.travel as my } from '../db/schema';
 
 annotate my.Travel {
 
+  TravelStatus @Common.ValueListWithFixedValues;
+
+  to_Agency @Common.ValueList: {
+    CollectionPath : 'TravelAgency',
+    Label : '',
+    Parameters : [
+      {$Type: 'Common.ValueListParameterInOut', LocalDataProperty: to_Agency_AgencyID, ValueListProperty: 'AgencyID'},  // local data property is the foreign key
+      {$Type: 'Common.ValueListParameterDisplayOnly', ValueListProperty: 'Name'},
+      {$Type: 'Common.ValueListParameterDisplayOnly', ValueListProperty: 'Street'},
+      {$Type: 'Common.ValueListParameterDisplayOnly', ValueListProperty: 'PostalCode'},
+      {$Type: 'Common.ValueListParameterDisplayOnly', ValueListProperty: 'City'},
+      {$Type: 'Common.ValueListParameterDisplayOnly', ValueListProperty: 'CountryCode_code'},
+      {$Type: 'Common.ValueListParameterDisplayOnly', ValueListProperty: 'PhoneNumber'},
+      {$Type: 'Common.ValueListParameterDisplayOnly', ValueListProperty: 'EMailAddress'},
+      {$Type: 'Common.ValueListParameterDisplayOnly', ValueListProperty: 'WebAddress'}
+    ]
+  };
+
   to_Customer @Common.ValueList: {
     CollectionPath : 'Passenger',
     Label : 'Customer ID',
@@ -64,8 +82,7 @@ annotate my.Booking {
     Label : '',
     Parameters : [
       {$Type: 'Common.ValueListParameterInOut', LocalDataProperty: to_Carrier_AirlineID, ValueListProperty: 'AirlineID'},
-      {$Type: 'Common.ValueListParameterDisplayOnly', ValueListProperty: 'Name'},
-      {$Type: 'Common.ValueListParameterDisplayOnly', ValueListProperty: 'CurrencyCode_code'}
+      {$Type: 'Common.ValueListParameterDisplayOnly', ValueListProperty: 'Name'}
     ]
   };
 
@@ -241,31 +258,4 @@ annotate my.TravelAgency {
     ]
   };
 
-}
-
-
-annotate my.Airline {
-  AirlineID @(
-            UI.Hidden     : false,
-            Core.Computed : null, // make sure the property is editable
-            Common        : {
-                ValueListWithFixedValues,
-                FieldControl     : #Mandatory,
-                ValueListMapping : {
-                    Label          : 'Airline',
-                    CollectionPath : 'Airline',
-                    Parameters     : [
-                    {
-                        $Type             : 'Common.ValueListParameterInOut',
-                        ValueListProperty : 'AirlineID',
-                        LocalDataProperty : AirlineID
-                    },
-                    {
-                        $Type             : 'Common.ValueListParameterDisplayOnly',
-                        ValueListProperty : 'Name'
-                    }
-                    ]
-                }
-            }
-        );
 }

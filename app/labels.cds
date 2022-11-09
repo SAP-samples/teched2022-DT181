@@ -17,7 +17,7 @@ annotate schema.Travel with @title: '{i18n>Travel}' {
   TreesPlanted @title: 'Trees Planted';
   TravelStatus @title: '{i18n>TravelStatus}'  @Common.Text: TravelStatus.name     @Common.TextArrangement: #TextOnly;
   to_Customer  @title: '{i18n>CustomerID}'    @Common.Text: to_Customer.LastName  @Common.TextArrangement: #TextFirst;
-  to_Agency    @title: '{i18n>AgencyID}'      ;
+  to_Agency    @title: '{i18n>AgencyID}'      @Common.Text: to_Agency.Name        @Common.TextArrangement: #TextFirst;
 }
 
 annotate schema.TravelStatus with {

@@ -236,4 +236,4 @@ The table is shown below the group section.
 
 You've now successfully configured the object page layout by adding group section,  sub sections, and a table section by making usage of the Page Map.
 
-Continue to - [Exercise 5 - Add Table Line Criticality and Micro Chart Table Column](../ex5/README.md)
+Continue to - [Exercise 5 - Add Micro Chart Table Column](../ex5/README.md)

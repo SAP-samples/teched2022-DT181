@@ -56,24 +56,30 @@ We now define how the color of the chart should be calculated by defining the cr
 
 ![](./images/image24.png)
 
-(16) On column **BookedFlights** Click **Navigate to source code** ![](./images/image27.png).
+(16) Click table column ![](./images/image27.png).
 
 ![](./images/image26.png)
 
-(17) This opens up the corresponding **UI.DataFieldForAnnotation** definition.
+(17) For property **Label** enter **VIP Status** and generate a text key for it by clicking ![](./images/image29.png).
 
 ![](./images/image28.png)
 
- (18) It refers to a **UI.Chart** annotation that was also generated:
+(18) On column **VIP Status** Click **Navigate to source code** ![](./images/image31.png).
 
 ![](./images/image30.png)
 
+(19) This opens up the corresponding **UI.DataFieldForAnnotation** definition.
+
+![](./images/image32.png)
+
+ (20) It refers to a **UI.Chart** annotation that was also generated:
+
+![](./images/image34.png)
+
 Switch to the preview browser tab.\
-(19) On the Object Page, the table now shows the micro chart column.
+(21) On the Object Page, the table now shows the micro chart column.
 
-![](./images/image31.png)
-
-
+![](./images/image35.png)
 
 ## Summary
 

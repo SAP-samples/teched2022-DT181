@@ -14,7 +14,18 @@ The **Page Map** provides several ways of configuring the app and also allows to
 
 ![](./images/image3.png)
 
-(3) In the Page Editor for the object page, expand **Sections** and delete section **My Itinerary** by clicking ![](./images/image6.png).
+In the Page Editor for the object page, expand **Sections**. As we want to replace the standard table section with a custom section, let's at first check the
+underlying annotation that will be reused with a table building block.\
+In section **My Itinerary**, click navigate to source code.
+
+![](./images/navtoAnnotation1.png)
+
+File **app/annotations.cds** is opened. Please note the qualifier of the lineItem annotation which has been set based on the table section description.\
+In case you have chosen a differing name, you will have to adopt the table building block metaPath accordingly later.
+
+![](./images/navtoAnnotation2.png)
+
+(3) In the Page Editor for the object page delete section **My Itinerary** by clicking ![](./images/image6.png).
 
 ![](./images/image5.png)
 
@@ -69,7 +80,7 @@ With the Section Position set to **After**, this defines where the custom sectio
 
 ![](./images/image27.png)
 
- Replace the content of file **CustomSection.fragment.xml** with the following xml snippet:
+ Replace the content of file **CustomSection.fragment.xml** with the following xml snippet.
 
  ```js
 <core:FragmentDefinition
@@ -87,7 +98,7 @@ With the Section Position set to **After**, this defines where the custom sectio
   <l:Grid hSpacing='1' containerQuery='true'
     defaultSpan='L12 M12 S12'>
    <l:content>
-   <macros:Table metaPath='to_Booking/@com.sap.vocabularies.UI.v1.LineItem'
+   <macros:Table metaPath='to_Booking/@com.sap.vocabularies.UI.v1.LineItem#i18nMyItinerary'
       id='bookingTable'/>
    </l:content>
   </l:Grid>
@@ -99,8 +110,10 @@ With the Section Position set to **After**, this defines where the custom sectio
 Only two properties are defined:
 
 - the table control **identifier**
-- **metaPath** defining the relative path from the current page's context (entity **Travel**) to the **LineItem** annotation of the associated entity **Booking**\
-  (via association **'to_Booking/@com.sap.vocabularies.UI.v1.LineItem'**)
+- **metaPath** defining the relative path from the current page's context (entity **Travel**) to the **LineItem** annotation of the associated entity **Booking**.\
+   Please double check that the qualifier at the end of property **metaPath** matches the one defined in the lineItem annotation in file **app/annotations.cds**.\
+     (in this case **'to_Booking/@com.sap.vocabularies.UI.v1.LineItem#i18nMyItinerary'**).\
+   If it differs, please adopt the **metaPath** in the xml code accordingly.
 
 ![](./images/image28.png)
 

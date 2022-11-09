@@ -5,7 +5,7 @@
   "repository": "https://github.com/SAP-samples/teched2022-DT181",
   "engines": {
     "node": ">=14"
-  },  
+  },
   "dependencies": {
     "@sap/cds": ">=5.4.5",
     "@sap/xssec": "^3.2.7",
@@ -74,7 +74,7 @@
           }
         ]
       }
-    }    
+    }
   },
   "jest": {
     "testEnvironment": "node",
