@@ -9,9 +9,11 @@ This repository contains the material for the SAP TechEd 2022 session called\
 
 Welcome to the workshop **DT181 - Boost Your Productivity in Developing SAP Fiori Apps**.\
 This workshop will guide you step-by-step through the process of creating a **SAPUI5 custom app** and blending it with the **SAP Fiori Elements Flexible Programming Model** which is available with SAP Fiori elements floorplans for OData V4.\
-Based on a **SAP Cloud Application Programming Model** service equipped with basic annotations, you will learn how to assemble your custom design from SAP Fiori Elements Building Blocks and leverage Controller Extensions with the help of **SAP Fiori tools** and the **SAP Fiori Elements Flexible Programming Model**.
+Based on a **SAP Cloud Application Programming Model** service equipped with basic annotations, you will learn how to assemble your **custom design** from **SAP Fiori Elements Building Blocks** and leverage **Controller Extensions** with the help of **SAP Fiori tools** and the **SAP Fiori Elements Flexible Programming Model**.
 
-![Trial Setup](exercises/ex0/images/sketch.png)
+# Making a wireframe is a great way to visualize the app
+
+![Trial Setup](exercises/ex0/images/TargetDesign.png)
 
 ## Requirements
 
