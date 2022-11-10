@@ -136,10 +136,10 @@ The empty custom app page is shown.
 Make sure you enable pop-ups
 for SAP Business Application Studio, then restart with **Preview Application** as described above.
 
-## Usage of Guided Answers Extension by SAP for Trouble Shooting
+## Usage of Guided Answers extension by SAP for Trouble Shooting
 
 If you are experiencing an issue with the application preview you can use the **Guided Answers extension by SAP** within your IDE to\
-help with troubleshooting. The Guided Answers Extension by SAP is **interactive documentation** designed to help users by guiding them\
+help with troubleshooting. The Guided Answers extension by SAP is **interactive documentation** designed to help users by guiding them\
 through tasks via a series of questions. You simply answer the questions presented to you to find the correct solution to your problem.\
 You can access the Guided Answer extension by SAP through the IDE command palette using the command ‘SAP: Open Guided Answers’.
 
