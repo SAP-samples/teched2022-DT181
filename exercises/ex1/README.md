@@ -99,7 +99,7 @@ The generated artifacts are located in folder **app/managetravels** (the path re
 ![](./images/image29.png)
 
 Both custom page XML View and controller had been created by the app generator. The files are located in folder **app/managetravels/ext/main**.\
-The custom page is configured as the default starting page in the application manifest routing section. Please note that a custom view in which you want to use building blocks needs to be wrapped into the **Flexible Programming Model component** provided by SAP Fiori elements. This ensures that the custom page runs on the SAP Fiori elements framework.
+The custom page is configured as the default starting page in the application manifest routing section. Please note that the custom view is wrapped into the **Flexible Programming Model component** provided by SAP Fiori elements. This ensures that the custom page runs on the SAP Fiori elements framework and enables the usage of building blocks.
 
 ![](./images/image31.png)
 

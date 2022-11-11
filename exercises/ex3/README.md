@@ -56,7 +56,8 @@ xmlns:f="sap.f"
         <f:content>
             <macros:Table 
             id="myTable" 
-            filterBar="FilterBar" 
+            filterBar="FilterBar"
+            readOnly="true"
             metaPath="@com.sap.vocabularies.UI.v1.LineItem" />
         </f:content>
     </f:DynamicPage>
