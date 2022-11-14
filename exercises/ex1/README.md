@@ -73,7 +73,7 @@ In the wizard step **Project Attributes**, add the following attributes to the a
 - **Application Namespace**: sap.fe.cap\
 (namespace has to match exactly for some of the subsequent exercises to work properly)
 
-- **Minimum SAPUI5 version**: Choose version 1.108.0\
+- **Minimum SAPUI5 version**: Choose version 1.107.0\
  (Minimum SAPUI5 version for some of the subsequent exercises to work properly)
 
 - Select **Configure Advanced Options** then **Add javasript code assist libraries to your project**

@@ -16,6 +16,13 @@ annotate TravelService.Travel with @Capabilities : {
   }
  };
 
+annotate TravelService.Booking with @Capabilities : { 
+  DeleteRestrictions : {
+      $Type : 'Capabilities.DeleteRestrictionsType',
+      Deletable: false
+  }
+ };
+
 //Exercise 7: Aggregation Capabilities
 annotate TravelService.BookedFlights with @(
   Aggregation.ApplySupported: {

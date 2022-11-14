@@ -148,7 +148,7 @@ Swich to the preview browser tab.\
 
 The Travel tiles show travels with status open.\
 (37) Click button ![](./images/image52.png) to change the travel status.\
-A side effect defined on the action in file **app/field-control.cds** [line 26 ff.](/app/field-control.cds#26) makes sure that the Travel entity is refreshed when the action is executed. With the status changed,\
+A side effect defined on the action in file **app/field-control.cds** [line 18 ff.](/app/field-control.cds#18) makes sure that the Travel entity is refreshed when the action is executed. With the status changed,\
 the tiles are refreshed, and the current selected Travel tile dissappears.\
 For more information about side effects, please check the guide [Usage of Side Effects](https://sapui5.hana.ondemand.com/test-resources/sap/fe/core/fpmExplorer/index.html#/advancedFeatures/guidance/guidanceSideEffects).
 
@@ -164,7 +164,7 @@ For more information about side effects, please check the guide [Usage of Side E
 For a sustainability initiative, the travel service provides some fields for a new green flight offering.\
 When the checkbox is selected, an info popover is shown (41), and the service backend calculates the values for properties **Green Flight Fee**,**Trees Planted**, and **Total Price**.\
 The values shown on the UI are automatically updated by another side effect on property **GoGreen** of entity **Travel**
-defined in file **app/field-control.cds** [line 86 ff.](/app/field-control.cds#86)
+defined in file **app/field-control.cds** [line 37 ff.](/app/field-control.cds#37)
 
 ![](./images/image55.png)
 
