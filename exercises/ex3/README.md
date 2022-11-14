@@ -2,6 +2,8 @@
 
 In this exercise we will improve the page layout and add features like a dynamic page title with snapped header content showing the filter status as it is known from the standard Listreport floorplan.\
 In order to adopt a custom design proposal, we will then add a tile slider showing open travels with a high total price.
+
+![](./images/sketchdetail.png)
 ## Exercise 3.1 - Adopt Dynamic Page Layout to the Main Page
 
 (1) Open the [filter bar sample](https://ui5.sap.com/test-resources/sap/fe/core/fpmExplorer/index.html#/buildingBlocks/filterBar/filterBarDefault) in the Flexible Programming Model Explorer
@@ -128,8 +130,6 @@ Switch to the preview browser tab.
 ## Exercise 3.3 - Add Generic Tile Slider
 
 The target design of the app sketches an overview on open travels with a high total price in form of a tile slider in the custom page snapped header area. While this could be as well achieved by defining multiple tab views with a selection variant on a standard list report (and it is recommended to always evaluate what can be achieved with the standard means Fiori elements offers), customers might prefer an alternative design approach to meet their requirements, which can be achieved with the Flexible Programming Model.
-
-![](./images/sketchdetail.png)
 
 (16) Open the [Custom Page Sample](https://ui5.sap.com/test-resources/sap/fe/core/fpmExplorer/index.html#/customElements/customElementsOverview/customPageContent) in the **Flexible Programming Model Explorer**.
 
