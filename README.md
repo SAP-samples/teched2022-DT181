@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2022-DT181)](https://api.reuse.software/info/github.com/SAP-samples/teched2022-DT181)
+
 # DT181 - Boost Your Productivity in Developing SAP Fiori Apps 
 
 ## Description
