@@ -179,7 +179,7 @@ Try to create the annotation as shown below, or alternatively just copy over the
 Here you can get some hands-on a live sample and check out the underlying code on the right side of the Explorer.\
 The code snippets can be manipulated, resulting in an instant reload of the sample.
 
-(30) The code snippet shows that building blocks filter bar and table are semantically connected via the filter bar ID. In the code editor, select and copy the **macros:table** definition.
+(30) The code snippet shows that building blocks filter bar and table are semantically connected via the filter bar ID.
 
 ![](./images/image46.png)
 
@@ -187,7 +187,7 @@ The code snippets can be manipulated, resulting in an instant reload of the samp
 
 ![](./images/image49.png)
 
-(34) Insert an empty line below **macros:FilterBar** and insert the copied **macros:Table** line.
+(34) Insert an empty line below **macros:FilterBar** and insert the following **macros:Table** line.
 
 ```js
 <macros:Table metaPath="@com.sap.vocabularies.UI.v1.LineItem" readOnly="true" id="LineItemTable" filterBar="FilterBar" />

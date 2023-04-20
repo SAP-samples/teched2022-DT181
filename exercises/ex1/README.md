@@ -22,13 +22,9 @@ Choose the corresponding list entry.
 
 ![](./images/image3.png)
 
-(4) In the wizard step **Template Selection**, click on the tile **Custom Page**.
+(4) In the wizard step **Template Selection**, click on the tile **Custom Page**, then click next (5).
 
 ![](./images/image5.png)
-
-(5) Click ![](./images/image8.png).
-
-![](./images/image7.png)
 
 (6) In the wizard step **Datasource and Service Selection**, open the dropdown list.
 
@@ -73,7 +69,7 @@ In the wizard step **Project Attributes**, add the following attributes to the a
 - **Application Namespace**: sap.fe.cap\
 (namespace has to match exactly for some of the subsequent exercises to work properly)
 
-- **Minimum SAPUI5 version**: Choose version 1.108.0\
+- **Minimum SAPUI5 version**: Choose version 1.113.0\
  (This SAPUI5 version has some features required for some of the subsequent exercises to work properly)
 
 - Select **Configure Advanced Options** then **Add javasript code assist libraries to your project**
@@ -145,7 +141,7 @@ You can access the Guided Answer extension by SAP through the IDE command palett
 
 ![](./images/ga1.png)
 
-You then can then search for the problem you are experiencing, for example, search for **‘Previewing Application’** or **‘SAP Fiori Tools’**\
+You then can then search for the problem you are experiencing, for example, search for **‘Application Preview’** or **‘SAP Fiori Tools’**\
 and then select the Guided Answer that best fits your issue. 
 
 ![](./images/ga2.png)
