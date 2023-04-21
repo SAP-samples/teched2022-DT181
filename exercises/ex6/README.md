@@ -16,14 +16,14 @@ The **Page Map** provides several ways of configuring the app and also allows to
 
 In the Page Editor for the object page, expand **Sections**. As we want to replace the standard table section with a custom section, let's at first check the
 underlying annotation that will be reused with a table building block.\
-In section **My Itinerary**, click navigate to source code.
+In section **My Itinerary**, click **Navigate to source code**.
 
-![](./images/navtoAnnotation1.png)
+![](./images/image40.png)
 
 File **app/annotations.cds** is opened. Please note the qualifier of the lineItem annotation which has been set based on the table section description.\
 In case you have chosen a differing name, you will have to adopt the table building block metaPath accordingly later.
 
-![](./images/navtoAnnotation2.png)
+![](./images/image41.png)
 
 (3) In the Page Editor for the object page delete section **My Itinerary** by clicking ![](./images/image6.png).
 

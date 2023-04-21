@@ -126,7 +126,11 @@ This defines the position in the XML Fragment where the reference to building bl
 
 ![](./images/image46.png)
 
-(30) **Selection Change Function**: **handler.onChartSelectionChanged**\
+(30) **Selection Change Function**:
+
+```js
+handler.onChartSelectionChanged
+```
 We will implement the handler in the next exercise.
 
 ![](./images/image48.png)
