@@ -98,22 +98,36 @@ With the Section Position set to **After**, this defines where the custom sectio
   <l:Grid hSpacing='1' containerQuery='true'
     defaultSpan='L12 M12 S12'>
    <l:content>
-   <macros:Table metaPath='to_Booking/@com.sap.vocabularies.UI.v1.LineItem#i18nMyItinerary'
-      id='bookingTable'/>
+
    </l:content>
   </l:Grid>
  </VBox>
 </core:FragmentDefinition>
 ```
 
-(15) The xml fragment combines a SAPUI5 MessageStrip control with the building block **Table** from namespace **sap.fe.macros**.\
+
+The xml fragment contains a SAPUI5 MessageStrip control which we will now combine with building block **Table** from namespace **sap.fe.macros**.\
+You can use **UI5 Language Support** extension for that purpose
+which supports the XML modelling of building blocks.
+- Place the cursor inside the **l:Content** section of the above entered code snippet and type in **<macros**.
+- Activate language support by pressing keys ctrl+space (Mac OS: cmd+space) 
+  and select **Table** from namespace sap.fe.macros.
+
+  ![](./images/imageLsp1.png)
+
+- Continue by adding property **metaPath**. Choose **navigation property to_Booking** as we need to define the relative path from the current page's context (entity **Travel**) to the **LineItem** annotation of the associated entity **Booking**
+
+![](./images/imageLsp2.png)
+
+- Enter a **'/'** after the navigation property. UI5 Language Support will now propose the LineItem annotations available for metamodel context **to_Booking** (as defined for entity **Booking** in file **app/managetravels/annotations.cds**).
+
+![](./images/imageLsp3.png)
+
+- Add the remaining property **id="bookingTable"** (unique identifier).  
+
 Only two properties are defined:
 
-- the table control **identifier**
-- **metaPath** defining the relative path from the current page's context (entity **Travel**) to the **LineItem** annotation of the associated entity **Booking**.\
-   Please double check that the qualifier at the end of property **metaPath** matches the one defined in the lineItem annotation in file **app/annotations.cds**.\
-     (in this case **'to_Booking/@com.sap.vocabularies.UI.v1.LineItem#i18nMyItinerary'**).\
-   If it differs, please adopt the **metaPath** in the xml code accordingly.
+(15) The **macros:Table** definition now should look the following:
 
 ![](./images/image28.png)
 

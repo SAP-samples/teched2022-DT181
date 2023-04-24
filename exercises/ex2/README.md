@@ -122,7 +122,7 @@ Now that you've learned how to use guided development in order to add a building
 (27) In the app studio open file **annotations.cds**.
 
 Add a **UI.LineItem** annotation below the existing UI.SelectionFields annotation (separated by a comma).\
-You can use the LSP support for annotation modelling by pressing keys ctrl+space (Mac OS: cmd+space) and
+You can use the CAP CDS LSP support for annotation modelling by pressing keys ctrl+space (Mac OS: cmd+space) and
 filter the available LSP menu entries (choose DataField annotations for normal columns, note that TravelStatus_code has the criticality property defined, and there are two DataFieldForAction annotations).\
 Try to create the annotation as shown below, or alternatively just copy over the annotation snippet, and don't forget the comma to separate from the previous annotation:
 
@@ -193,6 +193,29 @@ The code snippets can be manipulated, resulting in an instant reload of the samp
 <macros:Table metaPath="@com.sap.vocabularies.UI.v1.LineItem" readOnly="true" id="LineItemTable" filterBar="FilterBar" />
 ```
 ![](./images/image55.png)
+
+
+You can use **UI5 Language Support** extension for that purpose
+which supports the XML modelling of building blocks.
+- Place the cursor below line **<macros:FilterBar** and type in **<macros**.
+- Activate language support by pressing keys ctrl+space (Mac OS: cmd+space) 
+- Select **Table** from namespace sap.fe.macros.
+
+![](./images/imageLsp1.png)
+
+Continue by adding property **metaPath**.
+
+![](./images/imageLsp2.png)
+
+UI5 Language Support automatically proposes the available LineItem annotations, based on the metamodel context of the current page (corresponding annotation defined for entity **Travel** in file **app/managetravels/annotations.cds**).
+
+![](./images/imageLsp3.png)
+
+Continue using language support to add remaining properties **readonly="true"**, **id="LineItemTable"** and **filterBar="FilterBar"**.\
+Note that for the latter, language support offers the available filterbar id from the macros:FilterBar definition above.
+
+![](./images/imageLsp4.png)
+
 ## Exercise 2.3 Page Map: Add Object Page and Switch to Flexible Column Layout
 
 In this exercise we will add an object page to check on the navigation capabilities of the table building block.\
