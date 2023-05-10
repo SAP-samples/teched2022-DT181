@@ -106,7 +106,7 @@ With the Section Position set to **After**, this defines where the custom sectio
 ```
 
 
-The xml fragment contains a SAPUI5 MessageStrip control which we will now combine with building block **Table** from namespace **sap.fe.macros**.\
+The xml fragment contains a SAPUI5 MessageStrip control which we will now combine with **building block Table** from namespace **sap.fe.macros**.\
 You can use **UI5 Language Support** extension for that purpose
 which supports the XML modelling of building blocks.
 - Place the cursor inside the **l:Content** section of the above entered code snippet and type in **<macros**.
