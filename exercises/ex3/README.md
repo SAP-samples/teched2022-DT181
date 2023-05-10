@@ -32,7 +32,7 @@ xmlns:f="sap.f"
 (6) Replace the whole **\<Page\>** section with the adopted code snippet:
 
 ```xml
-    <f:DynamicPage id="FilterBarDefault" class="sapUiResponsiveContentPadding">
+    <f:DynamicPage id="Main" class="sapUiResponsiveContentPadding">
         <f:title>
             <f:DynamicPageTitle id="_IDGenDynamicPageTitle1">
                 <f:heading>
