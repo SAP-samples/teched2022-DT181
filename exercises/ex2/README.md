@@ -187,17 +187,12 @@ The code snippets can be manipulated, resulting in an instant reload of the samp
 
 ![](./images/image49.png)
 
-(34) Insert an empty line below **macros:FilterBar** and insert the following **macros:Table** line.
-
-```js
-<macros:Table metaPath="@com.sap.vocabularies.UI.v1.LineItem" readOnly="true" id="LineItemTable" filterBar="FilterBar" />
-```
-![](./images/image55.png)
-
+(34) We will now insert **building block Table** from namespace **sap.fe.macros** into the XML view.
 
 You can use **UI5 Language Support** extension for that purpose
 which supports the XML modelling of building blocks.
-- Place the cursor below line **<macros:FilterBar** and type in **<macros**.
+- Insert an empty line below **macros:FilterBar** 
+- Type in **<macros**.
 - Activate language support by pressing keys ctrl+space (Mac OS: cmd+space) 
 - Select **Table** from namespace sap.fe.macros.
 
@@ -215,6 +210,15 @@ Continue using language support to add remaining properties **readonly="true"**,
 Note that for the latter, language support offers the available filterbar id from the macros:FilterBar definition above.
 
 ![](./images/imageLsp4.png)
+
+Instead of using language support, you can also copy and insert from here:
+
+```js
+<macros:Table metaPath="@com.sap.vocabularies.UI.v1.LineItem" readOnly="true" id="LineItemTable" filterBar="FilterBar" />
+```
+The resulting code should now look like the following:
+
+![](./images/image55.png)
 
 ## Exercise 2.3 Page Map: Add Object Page and Switch to Flexible Column Layout
 
