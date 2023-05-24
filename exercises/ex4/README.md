@@ -197,9 +197,10 @@ We will now add a table section by using the Page Map.
 
 ![](./images/image67.png)
 
-(52) In dialog **Add Basic Columns**, open the drop-down and select the following properties:
+(52) In dialog **Add Basic Columns**, open the drop-down and select the following properties:\
+(You can search for properties behind navigation paths by entering the path segment followed by '/')
 
-- **to_Carrier.AirlinePicUrl**
+- **to_Carrier/AirlinePicUrl**
 - **BookingID**
 - **to_Customer_CustomerID**
 - **to_Carrier_AirlineID**
