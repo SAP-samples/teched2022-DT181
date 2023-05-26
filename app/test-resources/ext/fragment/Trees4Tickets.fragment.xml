@@ -37,10 +37,10 @@
             </f:Form>      
         </content>
         <beginButton>
-            <Button id="Save" text="Save" type="Emphasized"/>
+            <Button id="Save" text="Save" type="Emphasized" press=".onConfirm"/>
         </beginButton>
         <endButton>
-            <Button id="Cancel" text="Cancel"/>
+            <Button id="Cancel" text="Cancel" press=".onCancel"/>
         </endButton>        
     </Dialog>
 </core:FragmentDefinition>

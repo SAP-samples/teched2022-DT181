@@ -51,7 +51,7 @@ xmlns:f="sap.f"
                     <macros:FilterBar 
                         metaPath="@com.sap.vocabularies.UI.v1.SelectionFields" 
                         id="FilterBar" 
-                        filterChanged=".handlers.onFiltersChanged" />
+                        filterChanged=".onFiltersChanged" />
                 </VBox>
             </f:DynamicPageHeader>
         </f:header>
@@ -168,7 +168,7 @@ FilterStatus=Table Filter Status
                 $orderby : 'TotalPrice desc'
             }
         }">
-            <GenericTile id='gt1' header="Travel {TravelID}" subheader="{Description}" press=".handlers.onPressed" class="sapUiTinyMarginTop tileLayout">
+            <GenericTile id='gt1' header="Travel {TravelID}" subheader="{Description}" press=".onPressed" class="sapUiTinyMarginTop tileLayout">
                 <TileContent id='tc1' unit="{CurrencyCode_code}" footer="{to_Customer/LastName}">
                     <NumericContent id='nc1' withMargin="false" value="{TotalPrice}" valueColor="Good" scale="k" />
                 </TileContent>

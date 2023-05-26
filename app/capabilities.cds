@@ -42,9 +42,9 @@ annotate TravelService.BookedFlights with @(
         },
     ],
   },
-  Analytics.AggregatedProperties : [{
+  Analytics.AggregatedProperty #CountFlights: {
     Name : 'CountFlights',
     AggregationMethod : 'countdistinct',
     AggregatableProperty : BookingUUID,
     ![@Common.Label] : 'Booked Flights per Airline',
-  }]);
+  });

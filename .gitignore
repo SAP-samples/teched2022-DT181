@@ -44,3 +44,4 @@ dist/
 .env
 .values.yaml
 .cdsrc-private.json
+.vscode

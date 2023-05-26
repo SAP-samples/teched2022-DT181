@@ -45,17 +45,15 @@ sap.ui.define(
             //  onExit: function() {
             //
             //  },
-            handlers: {
-				onFiltersChanged: function (oEvent) {
-					var oSource = oEvent.getSource();
-					var mFBConditions = oSource.getModel("fbConditions");
-					mFBConditions.setProperty("/filtersTextInfo", oSource.getActiveFiltersText());
-				},
-                onPressed: function (oEvent) {
-                    var oContext = oEvent.getSource().getBindingContext();
-                    this.routing.navigate(oContext);
-                }              
-			}
+            onFiltersChanged: function (oEvent) {
+                var oSource = oEvent.getSource();
+                var mFBConditions = oSource.getModel("fbConditions");
+                mFBConditions.setProperty("/filtersTextInfo", oSource.getActiveFiltersText());
+            },
+            onPressed: function (oEvent) {
+                var oContext = oEvent.getSource().getBindingContext();
+                this.routing.navigate(oContext);
+            }              
         });
     }
 );
