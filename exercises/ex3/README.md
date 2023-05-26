@@ -107,15 +107,13 @@ as import parameter to the page controller function (see screenshot above).
 				oView.setModel(mFBConditions, "fbConditions");
 			},
 ```
-(13) Add the following wrapped handler function **onFiltersChanged** as shown in the screenshot.
+(13) Add the following handler function **onFiltersChanged** as shown in the screenshot.
 ```js
-            handlers: {
-				onFiltersChanged: function (oEvent) {
-					var oSource = oEvent.getSource();
-					var mFBConditions = oSource.getModel("fbConditions");
-					mFBConditions.setProperty("/filtersTextInfo", oSource.getActiveFiltersText());
-				}             
-			}
+            onFiltersChanged: function (oEvent) {
+                var oSource = oEvent.getSource();
+                var mFBConditions = oSource.getModel("fbConditions");
+                mFBConditions.setProperty("/filtersTextInfo", oSource.getActiveFiltersText());
+            }             
 ```
 ![](./images/image9.png)
 
